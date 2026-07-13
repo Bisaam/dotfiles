@@ -10,8 +10,19 @@ PROMPT='%F{#61AFEF}%n%F{#C678DD}@%F{#98C379}%m %F{#98C379}%~ %F{#FFFFFF}%%%f '
 # My Path variable
 export PATH="$PATH:/Users/bisaam/dev/projects/neofetch"
 
+# binds
+bindkey "^a" beginning-of-line
+bindkey "^e" end-of-line
+bindkey "^k" kill-line
+bindkey "^j" backward-word
+bindkey "^k" forward-word
+bindkey "^H" backward-kill-word
+
 # Aliases
 alias ..="cd .."
 alias ls="eza -l --icons"
 alias la="eza -la --icons"
+alias .="printf '\U000F17A9 ' && pwd"
+alias cat="bat"
+alias df="dysk"
 
