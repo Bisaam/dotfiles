@@ -36,4 +36,5 @@ alias la="eza -la --icons"
 alias .="printf '\U000F17A9 ' && pwd"
 alias cat="bat"
 alias df="dysk"
+alias rm="rm -i"
 
