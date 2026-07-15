@@ -19,15 +19,15 @@ bindkey "^j" backward-word
 bindkey "^k" forward-word
 bindkey "^H" backward-kill-word
 
+# no vim mode 
+bindkey -e
+
 # history opts
 HISTSIZE=1000000
 SAVEHIST=1000000
 HISTFILE="$XDG_CACHE_HOME/zsh_history" # move histfile to cache
 HISTCONTROL=ignoreboth # consecutive duplicates & commands starting with space are not saved
 
-
-# fzf setup
-source <(fzf --zsh) # allow for fzf history widget
 
 # aliases
 alias ..="cd .."
