@@ -9,7 +9,7 @@ eval "$(zoxide init --cmd cd zsh)"
 PROMPT='%F{#61AFEF}%n%F{#C678DD}@%F{#98C379}%m %F{#98C379}%~ %F{#FFFFFF}%%%f '
 
 # my Path variable
-export PATH="$PATH:/Users/bisaam/dev/projects/neofetch"
+export PATH="$PATH:/Users/bisaam/dev/projects/neofetch:/Users/bisaam/Library/Python/3.9/bin"
 
 # binds
 bindkey "^a" beginning-of-line
