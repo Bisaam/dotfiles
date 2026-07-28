@@ -1,6 +1,11 @@
+# defining compinit
+autoload -Uz compinit
+compinit
+
 # plugins
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /Users/bisaam/dotfiles/plugins/macos/macos.plugin.zsh
 
 # zoxide should use cd instead of z
 eval "$(zoxide init --cmd cd zsh)"
