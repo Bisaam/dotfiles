@@ -6,6 +6,8 @@ compinit
 source /Users/bisaam/dotfiles/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /Users/bisaam/dotfiles/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /Users/bisaam/dotfiles/plugins/macos/macos.plugin.zsh
+source /Users/bisaam/dotfiles/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+
 
 # zoxide should use cd instead of z
 eval "$(zoxide init --cmd cd zsh)"
@@ -14,7 +16,7 @@ eval "$(zoxide init --cmd cd zsh)"
 PROMPT='%F{#61AFEF}%n%F{#C678DD}@%F{#98C379}%m %F{#98C379}%~ %F{#FFFFFF}%%%f '
 
 # my Path variable
-export PATH="$PATH:/Users/bisaam/dev/projects/neofetch:/Users/bisaam/Library/Python/3.9/bin"
+export PATH="$PATH:/Users/bisaam/dev/projects/neofetch:/Users/bisaam/Library/Python/3.9/bin:/opt/homebrew/lib/ruby/gems/4.0.0/bin"
 
 # binds
 bindkey "^a" beginning-of-line
