@@ -48,3 +48,8 @@ alias path="echo $PATH | tr : '\n'"
 alias e="exit"
 alias tls="tmux ls"
 alias ta="tmux attach -t"
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/bisaam/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+# End of Docker CLI completions
