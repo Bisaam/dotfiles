@@ -4,3 +4,5 @@ syntax on
 set autoindent
 set smartindent
 
+"Catppuccin theme
+colorscheme catppuccin_mocha
