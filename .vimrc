@@ -5,4 +5,4 @@ set autoindent
 set smartindent
 
 "Catppuccin theme
-colorscheme catppuccin_mocha
+"#colorscheme catppuccin_mocha

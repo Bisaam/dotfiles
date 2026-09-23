@@ -1,0 +1,562 @@
+# Mole Cleanup Preview - 2026-09-15 12:22:24
+#
+# How to protect files:
+# 1. Copy any path below to ~/.config/mole/whitelist
+# 2. Run: mo clean --whitelist
+#
+# Example:
+#   /Users/*/Library/Caches/com.example.app
+#
+
+
+=== User essentials ===
+/Users/bisaam/Library/Caches/JNA  # 0B
+/Users/bisaam/Library/Caches/pip  # 24.2MB
+/Users/bisaam/Library/Caches/Google  # 1.83GB
+/Users/bisaam/Library/Caches/Animoji  # 1.3MB
+/Users/bisaam/Library/Caches/GameKit  # 49KB
+/Users/bisaam/Library/Caches/Mozilla  # 0B
+/Users/bisaam/Library/Caches/PassKit  # 4KB
+/Users/bisaam/Library/Caches/Chromium  # 184KB
+/Users/bisaam/Library/Caches/Homebrew  # 812.7MB
+/Users/bisaam/Library/Caches/Microsoft  # 8KB
+/Users/bisaam/Library/Caches/install4j  # 4KB
+/Users/bisaam/Library/Caches/io.sentry  # 4KB
+/Users/bisaam/Library/Caches/Softdeluxe  # 2.7MB
+/Users/bisaam/Library/Caches/GeoServices  # 133.6MB
+/Users/bisaam/Library/Caches/SentryCrash  # 25KB
+/Users/bisaam/Library/Caches/INSTALLATION  # 1KB
+/Users/bisaam/Library/Caches/familycircled  # 0B
+/Users/bisaam/Library/Caches/flutter_engine  # 705KB
+/Users/bisaam/Library/Caches/notion-updater  # 247.8MB
+/Users/bisaam/Library/Caches/notion.id.ShipIt  # 12KB
+/Users/bisaam/Library/Caches/claude-cli-nodejs  # 160KB
+/Users/bisaam/Library/Caches/Parallels Software  # 692KB
+/Users/bisaam/Library/Caches/com.lujjjh.LinearMouse  # 307KB
+/Users/bisaam/Library/Caches/org.wireshark.Wireshark  # 106KB
+/Users/bisaam/Library/Caches/ch.raciborski.swiftsalamander  # 2.1MB
+/Users/bisaam/Library/Logs/Dani  # 348KB
+/Users/bisaam/Library/Logs/Notion  # 918KB
+/Users/bisaam/Library/Logs/Baseband  # 0B
+/Users/bisaam/Library/Logs/Homebrew  # 0B
+/Users/bisaam/Library/Logs/Assistant  # 0B
+/Users/bisaam/Library/Logs/Cloudflare  # 3.1MB
+/Users/bisaam/Library/Logs/fsck_hfs.log  # 2KB
+/Users/bisaam/Library/Logs/CrashReporter  # 12KB
+/Users/bisaam/Library/Logs/SiriTTSService  # 0B
+/Users/bisaam/Library/Logs/DiagnosticReports  # 98KB
+/Users/bisaam/Library/Logs/DiscRecording.log  # 2KB
+/Users/bisaam/Library/Logs/PhotosSearch.aapbz  # 2KB
+/Users/bisaam/Library/Logs/PhotosUpgrade.aapbz  # 9KB
+/Users/bisaam/Library/Logs/PrivacyPreservingMeasurement  # 0B
+/Users/bisaam/Library/Logs/ch.raciborski.swiftsalamander  # 8KB
+
+=== App caches ===
+/Users/bisaam/Library/Application Support/CrashReporter/fdm_DE81B3C1-CFFD-534B-9461-26F204848FF0.plist  # 4KB
+/Users/bisaam/Library/Application Support/CrashReporter/firefox_DE81B3C1-CFFD-534B-9461-26F204848FF0.plist  # 4KB
+/Users/bisaam/Library/Application Support/CrashReporter/tldr_DE81B3C1-CFFD-534B-9461-26F204848FF0.plist  # 4KB
+/Users/bisaam/Library/Application Support/CrashReporter/swiftpm-testing-helper_DE81B3C1-CFFD-534B-9461-26F204848FF0.plist  # 4KB
+/Users/bisaam/Library/Application Support/CrashReporter/SwiftBar_DE81B3C1-CFFD-534B-9461-26F204848FF0.plist  # 4KB
+/Users/bisaam/Library/Application Support/CrashReporter/Discord_DE81B3C1-CFFD-534B-9461-26F204848FF0.plist  # 4KB
+/Users/bisaam/Library/Application Support/CrashReporter/Ice_DE81B3C1-CFFD-534B-9461-26F204848FF0.plist  # 4KB
+/Users/bisaam/Library/Application Support/CrashReporter/BetterTouchTool_DE81B3C1-CFFD-534B-9461-26F204848FF0.plist  # 4KB
+/Users/bisaam/Library/Application Support/CrashReporter/MTLCompilerService_DE81B3C1-CFFD-534B-9461-26F204848FF0.plist  # 4KB
+/Users/bisaam/Library/Application Support/CrashReporter/Microsoft AutoUpdate_DE81B3C1-CFFD-534B-9461-26F204848FF0.plist  # 4KB
+/Users/bisaam/Library/Caches/com.apple.helpd/Generated  # 18.3MB
+/Users/bisaam/Library/Caches/com.apple.helpd/HSTS.plist  # 1KB
+/Users/bisaam/Library/Caches/com.apple.helpd/fsCachedData  # 340KB
+/Users/bisaam/Library/Caches/com.apple.helpd/HelpCache.plist  # 34KB
+/Users/bisaam/Library/Caches/com.apple.helpd/CSHelpIndex.plist  # 29KB
+/Users/bisaam/Library/Caches/GeoServices/Resources  # 51.9MB
+/Users/bisaam/Library/Caches/GeoServices/Experiments.pbd  # 1KB
+/Users/bisaam/Library/Caches/GeoServices/RegionalResources  # 80.9MB
+/Users/bisaam/Library/Caches/GeoServices/SearchAttribution  # 16KB
+/Users/bisaam/Library/Caches/GeoServices/ActiveTileGroup.pbd  # 292KB
+/Users/bisaam/Library/Caches/GeoServices/ResourceManifest.pbd  # 319KB
+/Users/bisaam/Library/Caches/GeoServices/SearchAttribution.pbd  # 70KB
+/Users/bisaam/Library/Caches/GeoServices/DirectReadConfigStore.plist  # 1KB
+/Users/bisaam/Library/Caches/com.apple.AppleMediaServices/Metrics  # 1.6MB
+/Users/bisaam/Library/Caches/com.apple.AppleMediaServices/Storage  # 57KB
+/Users/bisaam/Library/Caches/com.apple.AppleMediaServices/DynamicUI  # 406KB
+/Users/bisaam/Library/Caches/com.apple.AppleMediaServices/Engagement  # 856KB
+/Users/bisaam/Library/Caches/com.apple.AppleMediaServices/PaymentSheetsUI  # 1.9MB
+/Users/bisaam/Library/Caches/com.apple.AppleMediaServices/sap-setup-cert.txt  # 3KB
+/Users/bisaam/Library/Caches/com.apple.parsecd/Cohorts  # 82KB
+/Users/bisaam/Library/Caches/com.apple.parsecd/bag.plist  # 3KB
+/Users/bisaam/Library/Caches/com.apple.parsecd/CustomFeedback  # 0B
+/Users/bisaam/Library/Caches/com.apple.parsecd/silhouette_config  # 1KB
+/Users/bisaam/Library/Caches/com.apple.parsecd/correction_dict_url  # 3.9MB
+/Users/bisaam/Library/Caches/com.apple.parsecd/spotlight_stopword.map  # 150KB
+/Users/bisaam/Library/Caches/com.apple.parsecd/dictionary_resources_url  # 2KB
+/Users/bisaam/Library/Caches/com.apple.parsecd/silhouette_topic_mapping  # 1.0MB
+/Users/bisaam/Library/Caches/com.apple.parsecd/spotlight_model_resources  # 4.0MB
+/Users/bisaam/Library/Caches/com.apple.parsecd/autofill_tld_whitelist_url  # 4.3MB
+/Users/bisaam/Library/Caches/com.apple.parsecd/crowdsourcing_blacklist_url  # 1KB
+/Users/bisaam/Library/Caches/com.apple.parsecd/crowdsourcing_whitelist_url  # 58KB
+/Users/bisaam/Library/Caches/com.apple.parsecd/installed_app_whitelist_url  # 169KB
+/Users/bisaam/Library/Caches/com.apple.parsecd/silhouette_whitelisted_topics  # 55KB
+/Users/bisaam/Library/Caches/com.apple.parsecd/spotlight_phrase_dictionary.map  # 3.4MB
+/Users/bisaam/Library/Caches/com.apple.python/Library  # 483KB
+
+=== Browsers ===
+/Users/bisaam/Library/Caches/Google/Chrome/Default  # 1.81GB
+/Users/bisaam/Library/Caches/Google/Chrome/Profile 1  # 15.5MB
+/Users/bisaam/Library/Caches/Google/Chrome/Profile 3  # 377KB
+/Users/bisaam/Library/Application Support/Google/GoogleUpdater/crx_cache/metadata.json  # 1KB
+/Users/bisaam/Library/Application Support/Google/GoogleUpdater/crx_cache/fc05d5753bbe9a1729c1c89456e11e77a49a7de55103329a92d3d96cdc5f9bba  # 752.1MB
+/Users/bisaam/Library/Application Support/Google/GoogleUpdater/updater.log.old  # 1.1MB
+/Users/bisaam/Library/Application Support/Google/GoogleUpdater/updater_history.jsonl.old  # 1.1MB
+/Users/bisaam/Library/Caches/Chromium/Default  # 184KB
+/Users/bisaam/Library/Caches/Firefox/Profiles  # 19.5MB
+
+=== Developer tools ===
+/Users/bisaam/.npm/_cacache/tmp  # 0B
+/Users/bisaam/.npm/_cacache/index-v5  # 70KB
+/Users/bisaam/.npm/_cacache/content-v2  # 5.6MB
+/Users/bisaam/.npm/_cacache/CACHEDIR.TAG  # 1KB
+/Users/bisaam/.npm/_npx/ac0ed6aa23b37c1e  # 5.8MB
+/Users/bisaam/.npm/_logs/2026-08-29T13_19_19_451Z-debug-0.log  # 8KB
+/Users/bisaam/.npm/_logs/2026-08-29T15_05_46_880Z-debug-0.log  # 1KB
+/Users/bisaam/.npm/_logs/2026-08-29T15_11_08_932Z-debug-0.log  # 1KB
+/Users/bisaam/.npm/_logs/2026-08-30T08_59_12_144Z-debug-0.log  # 1KB
+/Users/bisaam/.npm/_logs/2026-09-04T22_24_46_313Z-debug-0.log  # 1KB
+/Users/bisaam/.npm/_logs/2026-09-04T23_15_57_699Z-debug-0.log  # 1KB
+/Users/bisaam/.npm/_logs/2026-09-05T10_35_00_316Z-debug-0.log  # 1KB
+/Users/bisaam/.npm/_logs/2026-09-12T14_38_57_475Z-debug-0.log  # 1KB
+/Users/bisaam/.npm/_logs/2026-09-14T22_59_41_089Z-debug-0.log  # 1KB
+/Users/bisaam/.npm/_logs/2026-09-15T07_21_19_656Z-debug-0.log  # 1KB
+/Users/bisaam/dev/python/__pycache__  # 8KB
+/Users/bisaam/Library/Caches/SentryCrash/Raycast  # 4KB
+/Users/bisaam/Library/Caches/SentryCrash/OrbStack  # 4KB
+/Users/bisaam/Library/Caches/SentryCrash/CheatSheet  # 4KB
+/Users/bisaam/Library/Caches/SentryCrash/Cloudflare WARP  # 4KB
+/Users/bisaam/Library/Caches/SentryCrash/Raycast Pasteboard  # 4KB
+/Users/bisaam/Library/Caches/SentryCrash/Raycast Accessibility  # 4KB
+/Users/bisaam/Library/Application Support/Claude/Cache/Cache_Data  # 51.3MB
+/Users/bisaam/Library/Application Support/Claude/Cache/No_Vary_Search  # 8KB
+/Users/bisaam/Library/Application Support/Claude/Code Cache/js  # 45.7MB
+/Users/bisaam/Library/Application Support/Claude/Code Cache/wasm  # 8KB
+/Users/bisaam/Library/Application Support/Claude/Code Cache/electron-preload  # 532KB
+/Users/bisaam/Library/Application Support/Claude/GPUCache/index  # 263KB
+/Users/bisaam/Library/Application Support/Claude/GPUCache/data_0  # 45KB
+/Users/bisaam/Library/Application Support/Claude/GPUCache/data_1  # 270KB
+/Users/bisaam/Library/Application Support/Claude/GPUCache/data_2  # 1.1MB
+/Users/bisaam/Library/Application Support/Claude/GPUCache/data_3  # 8KB
+/Users/bisaam/Library/Application Support/Claude/DawnGraphiteCache/index  # 263KB
+/Users/bisaam/Library/Application Support/Claude/DawnGraphiteCache/data_0  # 8KB
+/Users/bisaam/Library/Application Support/Claude/DawnGraphiteCache/data_1  # 270KB
+/Users/bisaam/Library/Application Support/Claude/DawnGraphiteCache/data_2  # 8KB
+/Users/bisaam/Library/Application Support/Claude/DawnGraphiteCache/data_3  # 8KB
+/Users/bisaam/Library/Application Support/Claude/DawnWebGPUCache/index  # 263KB
+/Users/bisaam/Library/Application Support/Claude/DawnWebGPUCache/data_0  # 8KB
+/Users/bisaam/Library/Application Support/Claude/DawnWebGPUCache/data_1  # 270KB
+/Users/bisaam/Library/Application Support/Claude/DawnWebGPUCache/data_2  # 8KB
+/Users/bisaam/Library/Application Support/Claude/DawnWebGPUCache/data_3  # 8KB
+/Users/bisaam/Library/Application Support/Claude/sentry/queue  # 4KB
+/Users/bisaam/Library/Application Support/Claude/sentry/scope_v3.json  # 18KB
+/Users/bisaam/Library/Application Support/Code/logs/20260829T180100  # 74KB
+/Users/bisaam/Library/Application Support/Code/logs/20260830T191615  # 57KB
+/Users/bisaam/Library/Application Support/Code/logs/20260830T194414  # 57KB
+/Users/bisaam/Library/Application Support/Code/logs/20260904T141155  # 94KB
+/Users/bisaam/Library/Application Support/Code/logs/20260905T145340  # 49KB
+/Users/bisaam/Library/Application Support/Code/logs/20260911T033754  # 82KB
+/Users/bisaam/Library/Application Support/Code/logs/20260912T190625  # 70KB
+/Users/bisaam/Library/Application Support/Code/logs/20260912T190749  # 180KB
+/Users/bisaam/Library/Application Support/Code/logs/20260913T033249  # 82KB
+/Users/bisaam/Library/Application Support/Code/Cache/Cache_Data  # 18.0MB
+/Users/bisaam/Library/Application Support/Code/Cache/No_Vary_Search  # 8KB
+/Users/bisaam/Library/Application Support/Code/CachedData/08d4889f9ec4a1685d257b9b95de036c8e1ce1e5  # 13.5MB
+/Users/bisaam/Library/Application Support/Code/CachedData/110a328ea54b42367b803ec53ee0bf52ef26b419  # 12.9MB
+/Users/bisaam/Library/Application Support/Code/CachedData/a44adf7f53e00964ab890f9f8758a334f1fc15bc  # 13.7MB
+/Users/bisaam/Library/Caches/Homebrew/downloads/02183dfa6fec5cc404e8b08a2e154de2430aaa61979b48eb5d1e5e9ab633e4dd--libxau--1.0.12.arm64_tahoe.bottle.tar.gz  # 34KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/028c8e83ce3e793ff57a8374063f211ec49ae09193a89e35157b10610a40186c--libxrender--0.9.12.arm64_tahoe.bottle.tar.gz  # 55KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/02f56bf3898c6f8e43f0b195a5ecf1137bc4a64f4fdcfb87454a26c0582c6cea--fontconfig-2.18.3.bottle_manifest.json  # 56KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/08b35a8455328d5b88b92fb33e440aa748ab0702b11e2c8015e716bbabc9f7bd--jpeg-turbo--3.2.0.arm64_tahoe.bottle.1.tar.gz  # 1.3MB
+/Users/bisaam/Library/Caches/Homebrew/downloads/09fc1a0c5a7bb2b4866e84026028b8f2ba4693724c83ae75ae69e64375300bd3--fmt--12.2.0.arm64_tahoe.bottle.tar.gz  # 289KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/0b1147cc0a0fe621befd25be5d4e7336c6536b6d8362dc84c1264820e20f0934--atkmm@2.28-2.28.5.bottle_manifest.json  # 31KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/0b2753a0f48a1e4b348aa9bec75adec8a20f068c076ccae1e068c2a0add6d6f7--glib-2.88.3-1.bottle_manifest.json  # 86KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/0e88768a56dc46332aec44e40559cd1596167d24fc5e2bcf815fed0b38340d40--icu4c@78--78.3.arm64_tahoe.bottle.tar.gz  # 31.8MB
+/Users/bisaam/Library/Caches/Homebrew/downloads/0f65ffde4871edda0ec97f6b5a2995d0d2b0a53b82f6a8f2d51a530f3d076f84--gdk-pixbuf-2.44.8.bottle_manifest.json  # 141KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/13c65b3688abaf2475143340a1405db0d9543bff8f57851d7a14fc5fff09c102--aspell-0.60.8.2.bottle_manifest.json  # 12KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/152fb22ff88a23b62841dcfa14aac21018e1d736c072d732185f6139ef922e1c--libxrender-0.9.12.bottle_manifest.json  # 23KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/16bc8a6e91f1a4cba36af2e179d78b427d3efd67d5ae121a5aaa32f3f1fa9859--fmt-12.2.0.bottle_manifest.json  # 10KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/19a728b2b93934e4456c70ff77faa4404b8fe4984d0c3eb36eb70e1a67d2dd1e--giflib-6.1.3.bottle_manifest.json  # 10KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/19effaf053b0df2648c35e6bc45326d9655eb0e666537b9e15295ea6a5fbe816--freetype-2.14.3.bottle_manifest.json  # 13KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/1ea6cdaa08d12fb0abff0fa4db4e60f670b229e98974941f076c8c60518055e2--gtk+3-3.24.52.bottle_manifest.json  # 69KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/1fbab050865bd4e2c691035ac7a38c97673052ba56684addd7d0fb254e168bcc--cairomm@1.14-1.14.6.bottle_manifest.json  # 53KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/212f9c0ad60885d12e1047d1bfa68abf30a9531e7ad71b3b0b45c24cd6ef71ea--libxext--1.3.7.arm64_tahoe.bottle.tar.gz  # 110KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/223e15564bbc76f59c18aa93df4b984c12153086431e695fb57d28e06eaf801a--vte3--0.84.1_1.arm64_tahoe.bottle.tar.gz  # 1.1MB
+/Users/bisaam/Library/Caches/Homebrew/downloads/2325007eed8b7549eb8adce87fafad71aeddd6f54b983889d6ebaa305c60a981--cairo--1.18.4.arm64_tahoe.bottle.2.tar.gz  # 1.6MB
+/Users/bisaam/Library/Caches/Homebrew/downloads/23e607c150e7ddabae30295e11d1d97e24390f329a6a7105f46ac10afbc53c85--graphite2-1.3.15.bottle_manifest.json  # 11KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/255b29f533b7064a6e692de37b3d9a41d73033506bec841e9900dbf2eb337a4c--libxtst-1.2.5.bottle_manifest.json  # 32KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/280dc82d80f3c4a6a756406bab7401f702bb0c3b254a73ca6c07ad7504287e6f--ca-certificates-2026-08-13-1.bottle_manifest.json  # 12KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/286cdf679c5c12a055fa75adf750f2096c80d8da0b3154de9123156e29a69988--libxml++--2.42.4.arm64_tahoe.bottle.tar.gz  # 123KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/29e95b6acf79e16ec7a7c17851e2c4d86fb9838da1892024da5627da4c10d9c6--libthai--0.1.30.arm64_tahoe.bottle.tar.gz  # 278KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/2a7597c83147c6f91cb45a52a60be44495f3ae9cbb216bcf13dffbe6159168a3--at-spi2-core--2.60.6.arm64_tahoe.bottle.tar.gz  # 829KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/2d5dc739b9a3a1d72faa2022cd3ecf8f2058756d4eade56b1160ed3d32bfafc9--spdlog--1.17.0.arm64_tahoe.bottle.tar.gz  # 330KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/2d8dffdcc0933424f97b1af1862ca1337f48a2a96ec43f24968d3a47f2e4ada0--simdutf-9.1.1.bottle_manifest.json  # 24KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/2e9ef491a547c84f20c202c9da42d803c7b56a8096abec1fd844c5a31629b687--adwaita-icon-theme-50.0.bottle_manifest.json  # 9KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/303a7d3109b6bf2aaad1c6280ed47efe342a03c9ec3e7adc04545325d5399a26--gtkmm3-3.24.11.bottle_manifest.json  # 65KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/31c19652ef86eaaf199870752b119337143be0e43e3bdbfa385566039b4d6a7d--libx11-1.8.13.bottle_manifest.json  # 23KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/3754d19f192c8bb59d36cd9fe37ebe32bf29e5ead9ea6c42052787bed715d4f0--libxext-1.3.7.bottle_manifest.json  # 19KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/37b3de4d13c09c3d82538e234ab5da0b279d7c244141bce073d16baa75b483a5--uchardet-0.0.8.bottle_manifest.json  # 16KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/39e6eab1aa548e999885b1565f61f8e3a7bd102284a2b79d39e940823934d2aa--adwaita-icon-theme--50.0.all.bottle.tar.gz  # 2.0MB
+/Users/bisaam/Library/Caches/Homebrew/downloads/3c18d37a8d9420d72ac8d0df047e5369571d68d1b70db850c8e2d0aedd4eea39--graphene--1.10.8.arm64_tahoe.bottle.tar.gz  # 124KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/3d23dde1b5fc715b52f8c232507113d6d77316a543d40de4ddf0dd96228479ad--xorgproto--2025.1.arm64_tahoe.bottle.tar.gz  # 721KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/3d3687ec2f9685f880201a5a242610158dff334b09cc92fa23781b31db634c36--libtasn1-4.21.0.bottle_manifest.json  # 11KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/3e5a5fb6e9150595387f9f82885013dd4e0c50e775a026bb2d9ce4a9e9ef39df--libpng--1.6.58.arm64_tahoe.bottle.tar.gz  # 461KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/40579191928baeb50c2ea8d216e7cb3719e71d5a44ae816507bbbe6ec9475866--icu4c@78-78.3.bottle_manifest.json  # 13KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/438e4261add8ba59a16cfd8a4cfac9eff2c75fb762d748e2c5e4e1c30c453214--p11-kit--0.26.5.arm64_tahoe.bottle.tar.gz  # 994KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/43a9463bf6e079b1e46b098bc93a418e24a01711831b31b329b9b179eec709ca--gtkmm3--3.24.11.arm64_tahoe.bottle.tar.gz  # 1.9MB
+/Users/bisaam/Library/Caches/Homebrew/downloads/4403720ba2520821f1a3825dc2c21bb8ca5f733b0e978db2c6d578d29dc680a2--uchardet--0.0.8.arm64_tahoe.bottle.tar.gz  # 206KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/441460c64a403071e887c8717059dac1f68b652d857fc306ca6ec04a45c5f58e--libxtst--1.2.5.arm64_tahoe.bottle.tar.gz  # 41KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/4807c5012b2b5eedaaf11faa587a738d69d4058761bc1c1bd5ad28e112e6ee67--graphite2--1.3.15.arm64_tahoe.bottle.tar.gz  # 93KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/50fb72acae8b0b2a08f72a91c198c56dcd548ba11782e5f04365eebdeadfc55d--enchant--2.8.21.arm64_tahoe.bottle.tar.gz  # 139KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/5281d76e189624b10aae67d6fb269ae970a5b1c1494d11917cfb8b08e3c0aadc--libxcb--1.17.0.arm64_tahoe.bottle.1.tar.gz  # 1.0MB
+/Users/bisaam/Library/Caches/Homebrew/downloads/5563ec54b261462348fe5ef6e5bcb40900b6bb13fbbb073b7ed12cda9f37e071--glib--2.88.3.arm64_tahoe.bottle.1.tar.gz  # 9.3MB
+/Users/bisaam/Library/Caches/Homebrew/downloads/56abd2d951b87a93dbbb220ff02456a4a5bd153ef30e7132e01aa5afbc2cb0bc--gtk4-4.22.4-1.bottle_manifest.json  # 311KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/5991c6ac6a98fbe6a824d7aeda03e1b56f19e882b40c7d39aeb5d2e60a7a1b3e--fontconfig--2.18.3.arm64_tahoe.bottle.tar.gz  # 452KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/5ea98c07642982f07e3abac4b591f4e8376cc9975c758d977e82e06250cfb04d--claude  # 317.0MB
+/Users/bisaam/Library/Caches/Homebrew/downloads/5f5700247a44beb2795cae8c422b87eb8b9b04dd23d8d3365c36c40144afd63d--hicolor-icon-theme--0.18.all.bottle.tar.gz  # 16KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/6335be202d59f96fdee2e4a02f93d8ee87dfcfdbaa4ed132b8fe8c3e3651e27c--libxau-1.0.12.bottle_manifest.json  # 14KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/66fa324291e4570370b66ccd1f7403945a913ca217818687d4b11876463754e7--atkmm@2.28--2.28.5.arm64_tahoe.bottle.tar.gz  # 139KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/698561c60421c0f256e6f4154220dd9f123465f37b41b459f47f386a79f82ef3--p11-kit-0.26.5.bottle_manifest.json  # 36KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/6b8ad2c2391bd6f7fcbb2651368da90993d78a7424c0623e1642fc3f9f40bcac--libxfixes--6.0.2.arm64_tahoe.bottle.tar.gz  # 33KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/6d50144a54dd109a0f6913c45cc66069274170ed1419872359bd0434856603fc--webp-1.6.0.bottle_manifest.json  # 26KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/70835c74d449476f69c535127dcf54e7bc83475b0e28f15db78ccf6c2dfe3e7a--hicolor-icon-theme-0.18.bottle_manifest.json  # 2KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/70ca2a3f7046d3ed72120063e067dd3a6c950672592cd08d3e08c14746af9b06--cairomm@1.14--1.14.6.arm64_tahoe.bottle.tar.gz  # 135KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/7262f46fb92a40f4a771bb13de7113ade2bbddc30f20272783ca7c44a68f169a--asciiquarium--1.1_7.arm64_tahoe.bottle.tar.gz  # 113KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/74f6450eec57f2288b84317752ec3dffe980cc6d98ae4a169b4dd543f5ae3b5c--gspell-1.14.4.bottle_manifest.json  # 61KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/77836e0fba439ae5c4f1d5c973b98cdf74e6fc5c2ff5c443fd8f26e228436df2--enchant-2.8.21.bottle_manifest.json  # 77KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/77f1d2857b225941567838263ed5a09efcb67782de5495aa4a398e18ab652eba--libxi-1.8.3.bottle_manifest.json  # 25KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/79164fbce73aeec582df8baf70c42f16b69eff0de51b9c1ace72b212e9f0d0b1--libtasn1--4.21.0.arm64_tahoe.bottle.tar.gz  # 166KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/79f3d9941de6b1e20e4b9de96971e1090f20612f686a16f161a57bd4d9a811f2--gtk4--4.22.4.arm64_tahoe.bottle.1.tar.gz  # 28.9MB
+/Users/bisaam/Library/Caches/Homebrew/downloads/7dc3d4f2d309e62b734741497b3044cae97e6877413a5517d0d2c040fa1a7a6f--libsigc++@2-2.12.2.bottle_manifest.json  # 10KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/7f749e0a84725ad0364a867834935928f9c2d03474cea80821bb83b8d9bde915--dbus-1.16.2_1.bottle_manifest.json  # 14KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/834b2818aa2d310eb459e32c49d3a948fee28edee048028d7920c2352a9d7cd6--pango-1.58.2.bottle_manifest.json  # 195KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/8713e53f73d0be64780dbea522b0ee07027e6cc7828ff1a4fa0a6596f14cfe25--libxdmcp-1.1.5.bottle_manifest.json  # 15KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/87928d635b808e1a810ada5a0a8cf4b593b2c0c3985883827366c0c5cffe770f--libdatrie-0.2.14.bottle_manifest.json  # 10KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/88ff0299796c25cf3213ee65f613f9d8f0aecba60101951eb9a4008eb7e9373d--freetype--2.14.3.arm64_tahoe.bottle.tar.gz  # 997KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/8c45d0f5c9b621502c79ae6accca9af6e6c48908d33cebb749713e64a8173f73--pango--1.58.2.arm64_tahoe.bottle.tar.gz  # 901KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/8de4053dfd921eb7aa80181d815267cbb37849083ce1848678ebaf5012dc7464--cairo-1.18.4-2.bottle_manifest.json  # 51KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/8eb4b40d337e73af24bbfbc86469d1dc736bf2eb24254bfbe7aaa5fb2733fc34--gtksourceview4--4.8.4_2.arm64_tahoe.bottle.tar.gz  # 1.3MB
+/Users/bisaam/Library/Caches/Homebrew/downloads/8ef40927843fbbcef4f5d3d722a329dfbf685bb2b50839d15b68f72ebc687948--jpeg-turbo-3.2.0-1.bottle_manifest.json  # 17KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/8feb1162a7e9c8142b41a8ac580dd8916548de00eda8febcfb44627e793193ca--asciiquarium-1.1_7.bottle_manifest.json  # 29KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/90aef2d79ca8f4a8b1b68d3e5ef32a630e77e0413d912c339e4e4a0b14514761--libepoxy--1.5.10.arm64_tahoe.bottle.tar.gz  # 394KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/957a2d4ea3378f5fc125212e8e9a554efcfbdc7f0f44dbbea1f9f9c779e9017d--pangomm@2.46-2.46.5.bottle_manifest.json  # 40KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/95f4a8d4908c92f35e43a695c0bf8ef50b0f53030c942e4f226e8a79e3530ae6--graphene-1.10.8.bottle_manifest.json  # 34KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/968ddf1f477684b78e52ae939322c2c5aaa0df75c2ec88b24130d829871672e6--gsettings-desktop-schemas-50.1-1.bottle_manifest.json  # 27KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/998978422872d6c9ca17b9120a356a9fdf084018fd94cf224f21280f5d929f1c--libtiff--4.7.2.arm64_tahoe.bottle.2.tar.gz  # 2.0MB
+/Users/bisaam/Library/Caches/Homebrew/downloads/9b4a81e7d1c2fe7c2d8ed4194565744f65bab0238c00f7f3f521f5aec2b8697f--fribidi-1.0.16.bottle_manifest.json  # 13KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/9e8c3014f1d5b10ece80ba07228757fd4e93d77c260b0eb4d82240adb201e3c3--harfbuzz-14.4.0.bottle_manifest.json  # 198KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/9f3bb2de4f962c86ab4a0f0ac6e717e186de2f5b1e0321422c4aa69ee4fb9808--sevenzip-26.03.bottle_manifest.json  # 17KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/a17e9d0e04a0013a5be592875b012c409023664b3df084b8051766331d213ff5--libxcb-1.17.0-1.bottle_manifest.json  # 27KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/a1b39f6c4c853316feb7780339862100f5017fc8392872be4aba62c4b3357b09--libthai-0.1.30.bottle_manifest.json  # 12KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/a4a37d965307e029b7e36c54d34034fef15bf7d4202587fe1c339dd2727ed31a--libtiff-4.7.2-2.bottle_manifest.json  # 65KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/a704317ee4c743ae9b685740bb7d014cd125d0f8c5b8ee75178445aaee9a778a--cherrytree--1.7.2.arm64_tahoe.bottle.tar.gz  # 4.6MB
+/Users/bisaam/Library/Caches/Homebrew/downloads/a83322f85fe86f13e26b37d99cc733367f17ec614eb77fab081ed6f80b5f6d84--librsvg-2.63.0.bottle_manifest.json  # 212KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/acd07ebcc3619054d1e8015956a6a26f5102ce72fa4e6dd75d8a0ab79eb6ed3a--pcre2-10.48.bottle_manifest.json  # 22KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/af0509b3f03a53eb5fbdb93ddf1662ae96f5aef112728400192cd8d1b7e0f16f--cbonsai--1.4.2.arm64_tahoe.bottle.tar.gz  # 29KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/b01cdfafd847b0a9c1d7b67296cf65275d9e33eb1b14514117edc6358c0af2b0--nettle--4.0.arm64_tahoe.bottle.tar.gz  # 991KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/b12eb169e01f7ce7df1f736815c110a31fbb42eb9f9212a01ec4ff5e30e03665--libdatrie--0.2.14.arm64_tahoe.bottle.tar.gz  # 71KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/b28287ba19243f3e799893144fbbeebe7e4781d9693cf16ee3ccdc97eb4563a2--pcre2--10.48.arm64_tahoe.bottle.tar.gz  # 2.5MB
+/Users/bisaam/Library/Caches/Homebrew/downloads/b3d6d73897729d2f0060de4be4d21c07f6505f7f8fc3df758b131d3c4943e16d--gmp--6.3.0.arm64_tahoe.bottle.1.tar.gz  # 1.0MB
+/Users/bisaam/Library/Caches/Homebrew/downloads/b569ca8c710714340b216c5192b9c0b0b05000c463404900ee0e444497b8cbfc--gsettings-desktop-schemas--50.1.arm64_tahoe.bottle.1.tar.gz  # 1.9MB
+/Users/bisaam/Library/Caches/Homebrew/downloads/b6e163776d8e6a7bb6aba69dbe92cb84ddd22b41d39fa30d192bf01332d6aa63--Raycast_2.0.6.0_c3450ccdc9_arm64.dmg  # 111.8MB
+/Users/bisaam/Library/Caches/Homebrew/downloads/babdb82b41fd7a03b07f16b4059adfc83ea74dd529807c71912f4898b3c912c1--btop-1.4.7-1.bottle_manifest.json  # 10KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/bb1be63837cad04438280f53550f32b936b0b1de083be1248bdb35427058d0e6--gspell--1.14.4.arm64_tahoe.bottle.tar.gz  # 118KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/bd6f26797602aee266214a115630b7411f95356d09d6b8f62252d95dfca667af--webp--1.6.0.arm64_tahoe.bottle.tar.gz  # 902KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/be50531b0d70cc06706c54e72d4fdbf01dd70f5a2d0086c4c748eb6137280dca--gtksourceview4-4.8.4_2.bottle_manifest.json  # 57KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/bf388a438e2d93db4d71c2be0781d82e2cf52a7cfeba475b7a36e23dfb84d5d6--libpng-1.6.58.bottle_manifest.json  # 11KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/bf5883fd1ac6f89c54fb21276c7271631de0bbc4ec4235fd79f58734825c66ec--SwiftSalamander_0.8.71_arm64.dmg  # 22.3MB
+/Users/bisaam/Library/Caches/Homebrew/downloads/c376c8503d81a8c5a12013eed0219fc2da8d505409a3b75ee7def05251da65b6--yazi-26.8.15.bottle_manifest.json  # 15KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/c48243ad4a97abfc368ed9c060f6167e642ea44b0fa236335a12727c3b4bdd69--librsvg--2.63.0.arm64_tahoe.bottle.tar.gz  # 4.8MB
+/Users/bisaam/Library/Caches/Homebrew/downloads/c54da94a5b3fbc7b217bda303ed35ff730a20f360e34e50d95c220f2f5d679ab--libsigc++@2--2.12.2.arm64_tahoe.bottle.tar.gz  # 119KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/c5a1cfc3150d0d71a6b1129785ed7aa940ba25af448c6e777105a50990369388--Wisp-0.1.41.zip  # 361KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/c7071beb60f8b11b049358adb4cdf110065f37d8f4c8a2f9533eeb841d73c78b--harfbuzz--14.4.0.arm64_tahoe.bottle.tar.gz  # 3.7MB
+/Users/bisaam/Library/Caches/Homebrew/downloads/c73e94797930276d2edf36b9caf6fd01739578e7f881b5f2317d7527da239378--aspell--0.60.8.2.arm64_tahoe.bottle.tar.gz  # 121.2MB
+/Users/bisaam/Library/Caches/Homebrew/downloads/c97f371047e6c5ace2102824ae713b5d5e306a69c5a9cae22299babd0e3054f1--yazi--26.8.15.arm64_tahoe.bottle.tar.gz  # 13.5MB
+/Users/bisaam/Library/Caches/Homebrew/downloads/cc90c4b6ec351fa37c2be9555f5f4279fa3e6f276abe6873185900ec33e446bc--gdk-pixbuf--2.44.8.arm64_tahoe.bottle.tar.gz  # 793KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/cf0b1b3513071299d0028f7fbcee5e296d9edab67b10fd8a1a12ae69787daf53--gmp-6.3.0-1.bottle_manifest.json  # 17KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/d59d10875708902cb19f2834415db80f2fa2df2097b60edde85d2b79d7287329--libxml++-2.42.4.bottle_manifest.json  # 30KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/d826f8f6d35e7a5a7c9cf362c2cb0057d017de10a36e05edd695d9c1c1e01b00--ca-certificates--2026-08-13.all.bottle.1.tar.gz  # 113KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/d9c4f62ccb2f5abbfe52fa61cdab126184bf1161986c4bd637efcfd482d018a8--cbonsai-1.4.2.bottle_manifest.json  # 11KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/dc68d7025ab65f8cc307cd43f029b6ff22bc7b60d42ca5e2cfb1000349b24b3e--libx11--1.8.13.arm64_tahoe.bottle.tar.gz  # 2.3MB
+/Users/bisaam/Library/Caches/Homebrew/downloads/deecb49f6e1a4ef68dd5000a6e985f85284fe1d2a46d14e6241d020b1ef90b6a--at-spi2-core-2.60.6.bottle_manifest.json  # 138KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/e06796a448bb76f8e8c252143a06688671c8977046f5aae3cf830c4540ecf5eb--libxi--1.8.3.arm64_tahoe.bottle.tar.gz  # 161KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/e0a73cd7ae9b336eba0a7e7ed0a584154d4fd243441ba5b82e27720bb836a471--sevenzip--26.03.arm64_tahoe.bottle.tar.gz  # 1.9MB
+/Users/bisaam/Library/Caches/Homebrew/downloads/e126e982eb104730948984be72236847b1596aad6f864dd8735e83f5c45520e3--pixman-0.46.4-1.bottle_manifest.json  # 12KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/e1c17bd2519c49bf074b1eae2fc8970576db75055751265d737b03951aa74449--giflib--6.1.3.arm64_tahoe.bottle.tar.gz  # 143KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/e2f52ea3e1502949a2d20a3f75d02bbd156e96915c33e66d98b00ceeeb424b6c--fribidi--1.0.16.arm64_tahoe.bottle.tar.gz  # 99KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/e3152b321291cc014dcc926ffc29426fd185b4dec8f9dd11f3f45ed05a69612c--libidn2--2.3.8.arm64_tahoe.bottle.tar.gz  # 310KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/e31e2863d87e0fc4135755c3960c86f3673b6ff7279a971ff741945bc3a257ce--cherrytree-1.7.2.bottle_manifest.json  # 558KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/e4a3f965876241c1a2506aa0d00e64ee68ef23d1a57aa62254b8101d2e935679--nettle-4.0.bottle_manifest.json  # 13KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/e58dc3308fd4b6ade29f5e986711f9352da6b245ae3acb6dd86fcfead80d3aac--simdutf--9.1.1.arm64_tahoe.bottle.tar.gz  # 396KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/eb22fe034c6cd211389a6ff39abcfa3bd62a3c93aeaf55394fd9b77398504ea1--gnutls--3.8.13_2.arm64_tahoe.bottle.1.tar.gz  # 3.0MB
+/Users/bisaam/Library/Caches/Homebrew/downloads/eb68febce73112e8e8947d3a3bb687f388ab1613988ed51baf3f412436989b8c--glibmm@2.66-2.66.10.bottle_manifest.json  # 94KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/ed80b9a800d1870036aa458de4593ac5b55c7425f13b336ba083b4f549792a18--gtk+3--3.24.52.arm64_tahoe.bottle.tar.gz  # 17.1MB
+/Users/bisaam/Library/Caches/Homebrew/downloads/efbf223c2c1f08ded27bd5d1650dd19bb683ee7009b20a4b77fdd5cc94663cb8--pixman--0.46.4.arm64_tahoe.bottle.1.tar.gz  # 417KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/f00bef099b6fc64d40776b1c0a45ca7ccb978aaad77a1d45562437f89c04ba1d--pangomm@2.46--2.46.5.arm64_tahoe.bottle.tar.gz  # 143KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/f0bee85ffedadbdb1cd6f6c806b32aaa1ef43ea7a3a9de1afb1c0e1cb0e90ec2--vte3-0.84.1_1.bottle_manifest.json  # 426KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/f1c05e745f19c56be42ba8a750ad0f47556108572868ae5b65b57bb5074f129f--btop--1.4.7.arm64_tahoe.bottle.1.tar.gz  # 571KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/f209cb2aae38abcc4cb6f848ae9808ad9548bb09945aacc0a8ab504ef2a96346--gnutls-3.8.13_2-1.bottle_manifest.json  # 30KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/f30f50fbde4bff9a71de54d684e482d7da3432656d680b97441163c6e5665468--libidn2-2.3.8.bottle_manifest.json  # 19KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/f397f5402dd19ebcc71faf61918281e725ae6b3f493865538c35bc130dedd998--glibmm@2.66--2.66.10.arm64_tahoe.bottle.tar.gz  # 1.3MB
+/Users/bisaam/Library/Caches/Homebrew/downloads/f868f7814e9545fe8a454e2517467be1ee55cf091f569faeb7ce066385814785--spdlog-1.17.0.bottle_manifest.json  # 12KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/fce3a4a6573a72d3935bcc0d3ab4f72440681bb7ab6874ca37f3a7fd2a786cd4--libxdmcp--1.1.5.arm64_tahoe.bottle.tar.gz  # 37KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/fd805bf79575e7b411d64dbe52530bc86d27acb58ca26c6afc172f02dfec3641--libxfixes-6.0.2.bottle_manifest.json  # 23KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/fd91321dc6032305294ad3c7c3851bc80f1505f18512e4753036c509ba4b4e2c--libepoxy-1.5.10.bottle_manifest.json  # 28KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/fdc75303fe9f7e2782ac4f1b2834b0707e6212a0bb73d1dc5e398349f0662a08--dbus--1.16.2_1.arm64_tahoe.bottle.tar.gz  # 559KB
+/Users/bisaam/Library/Caches/Homebrew/downloads/ffdfbdc9463ce9d159edaace2ba6a1d3c9a53ea5aa92b8f51a2a05cae022f368--xorgproto-2025.1.bottle_manifest.json  # 17KB
+/opt/homebrew/var/homebrew/locks/adwaita-icon-theme.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/aklomp-base64.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/aom.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/apache-serf.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/apr-util.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/apr.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/aspell.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/at-spi2-core.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/atkmm@2.28.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/autoconf.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/automake.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/bison.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/bmake.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/buf.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/ca-certificates.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/cairo.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/cairomm@1.14.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/cargo-c.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/cmake.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/coreutils.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/dart-sass.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/dart-sdk.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/dartaotruntime.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/dav1d.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/dbus.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/docbook-xsl.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/docbook.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/docutils.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/doxygen.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/enchant.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/fast_float.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/fmt.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/fontconfig.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/freetype.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/fribidi.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/gd.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/gdk-pixbuf.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/gettext.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/ghostscript.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/giflib.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/glib.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/glibmm@2.66.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/gmp.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/gnu-getopt.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/gnutls.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/go.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/gobject-introspection.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/graphene.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/graphite2.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/graphviz.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/groff.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/gsettings-desktop-schemas.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/gspell.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/gtk+3.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/gtk4.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/gtkmm3.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/gtksourceview4.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/gts.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/harfbuzz.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/help2man.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/hicolor-icon-theme.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/icu4c@78.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/jasper.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/jbig2dec.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/jpeg-turbo.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/json-c.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/leptonica.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/libarchive.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/libavif.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/libb2.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/libdatrie.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/libepoxy.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/libgit2.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/libidn.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/libidn2.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/libpaper.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/libpng.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/librsvg.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/libsigc++@2.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/libssh2.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/libtasn1.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/libthai.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/libtiff.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/libtool.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/libunistring.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/libvmaf.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/libx11.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/libxau.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/libxcb.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/libxdmcp.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/libxext.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/libxfixes.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/libxi.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/libxml++.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/libxrender.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/libxtst.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/little-cms2.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/llhttp.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/llvm@22.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/lowdown.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/lz4.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/lzo.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/m4.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/meson.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/mpdecimal.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/ncurses.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/netpbm.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/nettle.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/ninja.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/openjpeg.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/openssl@3.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/p11-kit.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/pango.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/pangomm@2.46.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/pcre2.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/pixman.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/pkgconf.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/psutils.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/py3cairo.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/pygobject3.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/python-setuptools.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/python@3.12.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/python@3.13.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/python@3.14.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/readline.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/rust.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/scdoc.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/scons.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/simdutf.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/spdlog.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/sqlite.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/subversion.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/swig.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/tesseract.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/texinfo.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/uchardet.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/update  # 0B
+/opt/homebrew/var/homebrew/locks/utf8proc.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/util-macros.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/vala.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/vendor-install-ruby  # 0B
+/opt/homebrew/var/homebrew/locks/vte3.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/webp.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/xcb-proto.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/xmlto.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/xorgproto.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/xtrans.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/xz.formula.lock  # 0B
+/opt/homebrew/var/homebrew/locks/zstd.formula.lock  # 0B
+
+=== Apps & utilities ===
+/Users/bisaam/Library/Caches/com.anthropic.claudefordesktop/fsCachedData  # 0B
+/Users/bisaam/Library/Logs/Claude/mcp.log  # 0B
+/Users/bisaam/Library/Logs/Claude/ssh.log  # 1KB
+/Users/bisaam/Library/Logs/Claude/main.log  # 2.4MB
+/Users/bisaam/Library/Logs/Claude/swift.log  # 10KB
+/Users/bisaam/Library/Logs/Claude/main-window.log  # 0B
+/Users/bisaam/Library/Logs/Claude/claude.ai-web.log  # 46KB
+/Users/bisaam/Library/Logs/Claude/cowork_vm_node.log  # 6KB
+/Users/bisaam/Library/Logs/Claude/unknown-window.log  # 5KB
+/Users/bisaam/.zcompdump  # 50KB
+/Users/bisaam/Library/Caches/notion.id/fsCachedData  # 0B
+
+=== Application Support ===
+/Users/bisaam/Library/Application Support/Chromium/GraphiteDawnCache/data_1  # 270KB
+/Users/bisaam/Library/Application Support/Chromium/GraphiteDawnCache/f_000001  # 17KB
+/Users/bisaam/Library/Application Support/Chromium/GraphiteDawnCache/data_0  # 45KB
+/Users/bisaam/Library/Application Support/Chromium/GraphiteDawnCache/index  # 263KB
+/Users/bisaam/Library/Application Support/Chromium/GraphiteDawnCache/data_2  # 1.1MB
+/Users/bisaam/Library/Application Support/Chromium/GraphiteDawnCache/data_3  # 4.2MB
+/Users/bisaam/Library/Application Support/Code/Code Cache/js  # 8KB
+/Users/bisaam/Library/Application Support/Code/Code Cache/wasm  # 8KB
+/Users/bisaam/Library/Application Support/Code/Code Cache/electron-preload  # 16KB
+/Users/bisaam/Library/Application Support/Code/GPUCache/data_1  # 270KB
+/Users/bisaam/Library/Application Support/Code/GPUCache/data_0  # 45KB
+/Users/bisaam/Library/Application Support/Code/GPUCache/index  # 263KB
+/Users/bisaam/Library/Application Support/Code/GPUCache/data_2  # 1.1MB
+/Users/bisaam/Library/Application Support/Code/GPUCache/data_3  # 4.2MB
+/Users/bisaam/Library/Application Support/Code/DawnGraphiteCache/data_1  # 270KB
+/Users/bisaam/Library/Application Support/Code/DawnGraphiteCache/data_0  # 8KB
+/Users/bisaam/Library/Application Support/Code/DawnGraphiteCache/index  # 263KB
+/Users/bisaam/Library/Application Support/Code/DawnGraphiteCache/data_2  # 8KB
+/Users/bisaam/Library/Application Support/Code/DawnGraphiteCache/data_3  # 8KB
+/Users/bisaam/Library/Application Support/Code/DawnWebGPUCache/data_1  # 270KB
+/Users/bisaam/Library/Application Support/Code/DawnWebGPUCache/data_0  # 8KB
+/Users/bisaam/Library/Application Support/Code/DawnWebGPUCache/index  # 263KB
+/Users/bisaam/Library/Application Support/Code/DawnWebGPUCache/data_2  # 8KB
+/Users/bisaam/Library/Application Support/Code/DawnWebGPUCache/data_3  # 8KB
+/Users/bisaam/Library/Application Support/Joplin/Code Cache/js  # 8KB
+/Users/bisaam/Library/Application Support/Joplin/Code Cache/wasm  # 8KB
+/Users/bisaam/Library/Application Support/Joplin/GPUCache/data_1  # 270KB
+/Users/bisaam/Library/Application Support/Joplin/GPUCache/data_0  # 8KB
+/Users/bisaam/Library/Application Support/Joplin/GPUCache/index  # 263KB
+/Users/bisaam/Library/Application Support/Joplin/GPUCache/data_2  # 8KB
+/Users/bisaam/Library/Application Support/Joplin/GPUCache/data_3  # 8KB
+/Users/bisaam/Library/Application Support/Joplin/DawnGraphiteCache/data_1  # 270KB
+/Users/bisaam/Library/Application Support/Joplin/DawnGraphiteCache/data_0  # 8KB
+/Users/bisaam/Library/Application Support/Joplin/DawnGraphiteCache/index  # 263KB
+/Users/bisaam/Library/Application Support/Joplin/DawnGraphiteCache/data_2  # 8KB
+/Users/bisaam/Library/Application Support/Joplin/DawnGraphiteCache/data_3  # 8KB
+/Users/bisaam/Library/Application Support/Joplin/DawnWebGPUCache/data_1  # 270KB
+/Users/bisaam/Library/Application Support/Joplin/DawnWebGPUCache/data_0  # 8KB
+/Users/bisaam/Library/Application Support/Joplin/DawnWebGPUCache/index  # 263KB
+/Users/bisaam/Library/Application Support/Joplin/DawnWebGPUCache/data_2  # 8KB
+/Users/bisaam/Library/Application Support/Joplin/DawnWebGPUCache/data_3  # 8KB
+/Users/bisaam/Library/Application Support/Joplin/Cache/Cache_Data  # 0B
+/Users/bisaam/Library/Application Support/Joplin/Cache/No_Vary_Search  # 0B
+/Users/bisaam/Library/Application Support/Notion/Code Cache/js  # 8KB
+/Users/bisaam/Library/Application Support/Notion/Code Cache/wasm  # 8KB
+/Users/bisaam/Library/Application Support/Notion/Code Cache/electron-preload  # 8KB
+/Users/bisaam/Library/Application Support/Notion/GPUCache/data_1  # 270KB
+/Users/bisaam/Library/Application Support/Notion/GPUCache/data_0  # 8KB
+/Users/bisaam/Library/Application Support/Notion/GPUCache/index  # 263KB
+/Users/bisaam/Library/Application Support/Notion/GPUCache/data_2  # 8KB
+/Users/bisaam/Library/Application Support/Notion/GPUCache/data_3  # 8KB
+/Users/bisaam/Library/Application Support/Notion/DawnGraphiteCache/data_1  # 270KB
+/Users/bisaam/Library/Application Support/Notion/DawnGraphiteCache/data_0  # 8KB
+/Users/bisaam/Library/Application Support/Notion/DawnGraphiteCache/index  # 263KB
+/Users/bisaam/Library/Application Support/Notion/DawnGraphiteCache/data_2  # 8KB
+/Users/bisaam/Library/Application Support/Notion/DawnGraphiteCache/data_3  # 8KB
+/Users/bisaam/Library/Application Support/Notion/DawnWebGPUCache/data_1  # 270KB
+/Users/bisaam/Library/Application Support/Notion/DawnWebGPUCache/data_0  # 8KB
+/Users/bisaam/Library/Application Support/Notion/DawnWebGPUCache/index  # 263KB
+/Users/bisaam/Library/Application Support/Notion/DawnWebGPUCache/data_2  # 8KB
+/Users/bisaam/Library/Application Support/Notion/DawnWebGPUCache/data_3  # 8KB
+/Users/bisaam/Library/Application Support/Notion/Cache/Cache_Data  # 0B
+/Users/bisaam/Library/Application Support/Notion/Cache/No_Vary_Search  # 0B
+/Users/bisaam/Library/Application Support/balenaEtcher/Code Cache/js  # 8KB
+/Users/bisaam/Library/Application Support/balenaEtcher/Code Cache/wasm  # 8KB
+/Users/bisaam/Library/Application Support/balenaEtcher/GPUCache/data_1  # 270KB
+/Users/bisaam/Library/Application Support/balenaEtcher/GPUCache/data_0  # 8KB
+/Users/bisaam/Library/Application Support/balenaEtcher/GPUCache/index  # 263KB
+/Users/bisaam/Library/Application Support/balenaEtcher/GPUCache/data_2  # 8KB
+/Users/bisaam/Library/Application Support/balenaEtcher/GPUCache/data_3  # 8KB
+/Users/bisaam/Library/Application Support/balenaEtcher/DawnGraphiteCache/data_1  # 270KB
+/Users/bisaam/Library/Application Support/balenaEtcher/DawnGraphiteCache/data_0  # 8KB
+/Users/bisaam/Library/Application Support/balenaEtcher/DawnGraphiteCache/index  # 263KB
+/Users/bisaam/Library/Application Support/balenaEtcher/DawnGraphiteCache/data_2  # 8KB
+/Users/bisaam/Library/Application Support/balenaEtcher/DawnGraphiteCache/data_3  # 8KB
+/Users/bisaam/Library/Application Support/balenaEtcher/DawnWebGPUCache/data_1  # 270KB
+/Users/bisaam/Library/Application Support/balenaEtcher/DawnWebGPUCache/data_0  # 8KB
+/Users/bisaam/Library/Application Support/balenaEtcher/DawnWebGPUCache/index  # 263KB
+/Users/bisaam/Library/Application Support/balenaEtcher/DawnWebGPUCache/data_2  # 8KB
+/Users/bisaam/Library/Application Support/balenaEtcher/DawnWebGPUCache/data_3  # 8KB
+/Users/bisaam/Library/Application Support/balenaEtcher/Cache/Cache_Data  # 8KB
+
+# ============================================
+# Summary
+# ============================================
+# Potential cleanup: 6.75GB
+# Items: 533
+# Categories: 6

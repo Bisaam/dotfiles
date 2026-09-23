@@ -1,0 +1,229 @@
+# Common recent settings file for Wireshark 4.6.8.
+#
+# This file is regenerated each time Wireshark is quit
+# and when changing configuration profile.
+# So be careful, if you want to make manual changes here.
+
+######## Recent capture files (latest last), cannot be altered through command line ########
+
+recent.capture_file: /Users/bisaam/Desktop/test_20260724113718_00001.pcapng
+recent.capture_file: /Users/bisaam/Desktop/test_20260724114428_00001.pcapng
+recent.capture_file: /Users/bisaam/Desktop/test_20260724115050_00001.pcapng
+recent.capture_file: /Users/bisaam/Desktop/test_20260724115624_00001.pcapng
+recent.capture_file: /Users/bisaam/Downloads/TLS-Decryption_ChrisGreer/TLS Decryption_Chris Greer_Bombal.pcapng
+recent.capture_file: /Users/bisaam/Downloads/udemy-lab1-wiresharkintro.pcapng
+recent.capture_file: /Users/bisaam/wireshark/udemy-lab1-wiresharkintro.pcapng
+recent.capture_file: /Users/bisaam/wireshark/Lab 1/udemy-lab1-wiresharkintro.pcapng
+recent.capture_file: /Users/bisaam/Downloads/git_capture.pcapng
+
+######## Recent capture filters (latest first), cannot be altered through command line ########
+
+
+######## Recent display filters (latest last), cannot be altered through command line ########
+
+recent.display_filter: tcp.stream eq 1
+recent.display_filter: ip.dst == 20.207.73.82 || ip.src == 10.207.73.82
+recent.display_filter: ip.dst == 20.207.73.82
+recent.display_filter: tcp.stream eq 0
+recent.display_filter: (ip.dst == 39.49.62.200) && (ip.src == 192.168.0.226)
+recent.display_filter: ip.dst == 39.49.62.200
+recent.display_filter: tcp.port in {6927,6895,6927}
+recent.display_filter: tcp.port == 9999
+recent.display_filter: tcp.port == 9998
+recent.display_filter: tcp.port == 8080
+
+# Main window geometry.
+# Decimal numbers.
+gui.geometry_main_x: 0
+gui.geometry_main_y: 30
+gui.geometry_main_width: 2048
+gui.geometry_main_height: 1033
+
+# Main window maximized.
+# true or false (case-insensitive).
+gui.geometry_main_maximized: true
+
+# Main window geometry state.
+# Hex byte string.
+gui.geometry_main: 01d9d0cb00030000000000000000001e000007ff00000442000000000000003a000007ff0000044200000000020000000800000000000000003a000007ff00000442
+
+# Leftalign Action Buttons.
+# true or false (case-insensitive).
+gui.geometry_leftalign_actions: false
+
+# Last used Configuration Profile.
+gui.last_used_profile: Default 2
+
+# Number of packets or events to check for automatic profile switching.
+# Decimal number. Zero disables switching.
+#gui.profile_switch_check_count: 1000
+
+# Warn if running with elevated permissions (e.g. as root).
+# true or false (case-insensitive).
+privs.warn_if_elevated: true
+
+# Warn if Wireshark is unable to capture.
+# true or false (case-insensitive).
+sys.warn_if_no_capture: false
+
+# Find packet search in.
+# One of: PACKET_LIST, PACKET_DETAILS, PACKET_BYTES
+gui.search_in: PACKET_LIST
+
+# Find packet character set.
+# One of: NARROW_AND_WIDE, NARROW, WIDE
+gui.search_char_set: NARROW_AND_WIDE
+
+# Find packet case sensitive search.
+# true or false (case-insensitive).
+gui.search_case_sensitive: false
+
+# Find packet search reverse direction.
+# true or false (case-insensitive).
+gui.search_reverse_dir: false
+
+# Find packet search multiple occurrences.
+# true or false (case-insensitive).
+gui.search_multiple_occurs: false
+
+# Find packet search type.
+# One of: DISPLAY_FILTER, HEX_VALUE, STRING, REGEX
+gui.search_type: DISPLAY_FILTER
+
+# Welcome page sidebar Learn section visible.
+# true or false (case-insensitive).
+gui.welcome_page.sidebar.learn_visible: true
+
+# Welcome page sidebar Tips section visible.
+# true or false (case-insensitive).
+gui.welcome_page.sidebar.tips_visible: true
+
+# Welcome page sidebar Tips event slides.
+# true or false (case-insensitive).
+gui.welcome_page.sidebar.tips_events: true
+
+# Welcome page sidebar Tips sponsorship slides.
+# true or false (case-insensitive).
+gui.welcome_page.sidebar.tips_sponsorship: true
+
+# Welcome page sidebar Tips tip-of-the-day slides.
+# true or false (case-insensitive).
+gui.welcome_page.sidebar.tips_tips: true
+
+# Welcome page sidebar Tips auto advance slides.
+# true or false (case-insensitive).
+gui.welcome_page.sidebar.tips_auto_advance: true
+
+# Welcome page sidebar Tips slide auto-advance interval in seconds.
+gui.welcome_page.sidebar.tips_interval: 8
+
+# Geometry and maximized state of ManageInterfacesDialog window.
+# Decimal integers.
+gui.geom.ManageInterfacesDialog.x: 603
+gui.geom.ManageInterfacesDialog.y: 316
+gui.geom.ManageInterfacesDialog.width: 750
+gui.geom.ManageInterfacesDialog.height: 425
+# true or false (case-insensitive).
+gui.geom.ManageInterfacesDialog.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.ManageInterfacesDialog.qt_geometry: 01d9d0cb000300000000025b0000013c00000548000003000000025b000001580000054800000300000000000000000007800000025b000001580000054800000300
+
+# Geometry and maximized state of FollowStreamDialog window.
+# Decimal integers.
+gui.geom.FollowStreamDialog.x: 382
+gui.geom.FollowStreamDialog.y: 30
+gui.geom.FollowStreamDialog.width: 1324
+gui.geom.FollowStreamDialog.height: 946
+# true or false (case-insensitive).
+gui.geom.FollowStreamDialog.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.FollowStreamDialog.qt_geometry: 01d9d0cb000300000000017e0000001e000006a9000003eb0000017e0000003a000006a9000003eb000000000000000007800000017e0000003a000006a9000003eb
+
+# Geometry and maximized state of CaptureCommentDialog window.
+# Decimal integers.
+gui.geom.CaptureCommentDialog.x: 765
+gui.geom.CaptureCommentDialog.y: 379
+gui.geom.CaptureCommentDialog.width: 400
+gui.geom.CaptureCommentDialog.height: 300
+# true or false (case-insensitive).
+gui.geom.CaptureCommentDialog.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.CaptureCommentDialog.qt_geometry: 01d9d0cb00030000000002fd0000017b0000048c000002c2000002fd000001970000048c000002c200000000000000000780000002fd000001970000048c000002c2
+
+# Geometry and maximized state of DecodeAsDialog window.
+# Decimal integers.
+gui.geom.DecodeAsDialog.x: 669
+gui.geom.DecodeAsDialog.y: 335
+gui.geom.DecodeAsDialog.width: 750
+gui.geom.DecodeAsDialog.height: 460
+# true or false (case-insensitive).
+gui.geom.DecodeAsDialog.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.DecodeAsDialog.qt_geometry: 01d9d0cb000300000000029d0000014f0000058a000003360000029d0000016b0000058a00000336000000000000000008000000029d0000016b0000058a00000336
+
+# Geometry and maximized state of PreferencesDialog window.
+# Decimal integers.
+gui.geom.PreferencesDialog.x: 182
+gui.geom.PreferencesDialog.y: 189
+gui.geom.PreferencesDialog.width: 997
+gui.geom.PreferencesDialog.height: 554
+# true or false (case-insensitive).
+gui.geom.PreferencesDialog.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.PreferencesDialog.qt_geometry: 01d9d0cb00030000000000b6000000bd0000049a00000302000000b6000000d90000049a0000030200000000000000000800000000b6000000d90000049a00000302
+
+# Geometry and maximized state of PacketDialog window.
+# Decimal integers.
+gui.geom.PacketDialog.x: 210
+gui.geom.PacketDialog.y: 61
+gui.geom.PacketDialog.width: 1589
+gui.geom.PacketDialog.height: 875
+# true or false (case-insensitive).
+gui.geom.PacketDialog.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.PacketDialog.qt_geometry: 01d9d0cb00030000000000d20000003d00000706000003c3000000d20000005900000706000003c300000000000000000780000000d20000005900000706000003c3
+
+# Geometry and maximized state of CaptureFilePropertiesDialog window.
+# Decimal integers.
+gui.geom.CaptureFilePropertiesDialog.x: 507
+gui.geom.CaptureFilePropertiesDialog.y: 30
+gui.geom.CaptureFilePropertiesDialog.width: 1246
+gui.geom.CaptureFilePropertiesDialog.height: 1020
+# true or false (case-insensitive).
+gui.geom.CaptureFilePropertiesDialog.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.CaptureFilePropertiesDialog.qt_geometry: 01d9d0cb00030000000001fb0000001e000006d800000435000001fb0000003a000006d80000043500000000000000000780000001fb0000003a000006d800000435
+
+# Geometry and maximized state of ColoringRulesDialog window.
+# Decimal integers.
+gui.geom.ColoringRulesDialog.x: 534
+gui.geom.ColoringRulesDialog.y: 178
+gui.geom.ColoringRulesDialog.width: 950
+gui.geom.ColoringRulesDialog.height: 717
+# true or false (case-insensitive).
+gui.geom.ColoringRulesDialog.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.ColoringRulesDialog.qt_geometry: 01d9d0cb0003000000000216000000b2000005cb0000039a00000216000000ce000005cb0000039a0000000000000000078000000216000000ce000005cb0000039a
+
+# Geometry and maximized state of MaxMind Database Paths window.
+# Decimal integers.
+gui.geom.MaxMind Database Paths.x: 296
+gui.geom.MaxMind Database Paths.y: 406
+gui.geom.MaxMind Database Paths.width: 566
+gui.geom.MaxMind Database Paths.height: 403
+# true or false (case-insensitive).
+gui.geom.MaxMind Database Paths.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.MaxMind Database Paths.qt_geometry: 01d9d0cb0003000000000128000001960000035d0000034400000128000001b20000035d000003440000000000000000080000000128000001b20000035d00000344
+
+# Custom colors.
+# List of custom colors selected in Qt color picker.
+gui.custom_colors: 
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff"

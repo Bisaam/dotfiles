@@ -1,0 +1,5 @@
+# User overrides for Apple's container platform.
+# Managed by Davit — edits made here are preserved only for [plugin.*] sections.
+
+[container]
+memory = "2GB"

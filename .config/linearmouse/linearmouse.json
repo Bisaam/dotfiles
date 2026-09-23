@@ -1,0 +1,73 @@
+{
+  "$schema" : "https:\/\/schema.linearmouse.app\/0.11.4",
+  "schemes" : [
+    {
+      "buttons" : {
+        "autoScroll" : {
+          "enabled" : false,
+          "mode" : "toggle",
+          "speed" : 0.3,
+          "trigger" : {
+            "button" : 2
+          }
+        },
+        "mappings" : [
+
+        ],
+        "universalBackForward" : true
+      },
+      "if" : {
+        "device" : {
+          "category" : "mouse",
+          "productID" : "0xfa61",
+          "productName" : "USB Gaming Mouse",
+          "vendorID" : "0x1d57"
+        }
+      },
+      "pointer" : {
+        "acceleration" : 0.5,
+        "disableAcceleration" : false,
+        "redirectsToScroll" : false,
+        "speed" : 0.08
+      },
+      "scrolling" : {
+        "reverse" : {
+          "vertical" : false
+        }
+      }
+    },
+    {
+      "if" : {
+        "device" : {
+          "category" : "mouse",
+          "productID" : "0xfa60",
+          "productName" : "2.4G Wireless Device",
+          "vendorID" : "0x1d57"
+        }
+      },
+      "pointer" : {
+        "acceleration" : 0.6877,
+        "speed" : 0.0747
+      }
+    },
+    {
+      "if" : {
+        "device" : {
+          "category" : "mouse",
+          "productID" : "0x40",
+          "productName" : "X3-5.2 Mouse",
+          "vendorID" : "0x45e"
+        }
+      },
+      "pointer" : {
+        "acceleration" : 0.5,
+        "speed" : 0.04
+      },
+      "scrolling" : {
+        "reverse" : {
+          "vertical" : true
+        }
+      }
+    }
+  ]
+}

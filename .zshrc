@@ -16,7 +16,7 @@ eval "$(zoxide init --cmd cd zsh)"
 PROMPT='%F{#61AFEF}%n%F{#C678DD}@%F{#98C379}%m %F{#98C379}%~ %F{#FFFFFF}%%%f '
 
 # my Path variable
-export PATH="$PATH:$HOME/dev/projects/neofetch:$HOME/Library/Python/3.9/bin:/opt/homebrew/lib/ruby/gems/4.0.0/bin"
+export PATH="$PATH:$HOME/Library/Python/3.9/bin:$HOME/.local/bin:/opt/metasploit-framework/bin:/opt/homebrew/lib/ruby/gems/4.0.0/bin"
 
 # binds
 bindkey "^a" beginning-of-line
@@ -48,8 +48,15 @@ alias path="echo $PATH | tr : '\n'"
 alias e="exit"
 alias tls="tmux ls"
 alias ta="tmux attach -t"
+alias tk="tmux kill-session -t"
+
+
+
 # The following lines have been added by Docker Desktop to enable Docker CLI completions.
 fpath=($HOME/.docker/completions $fpath)
 autoload -Uz compinit
 compinit
 # End of Docker CLI completions
+
+# Starship startup
+eval "$(starship init zsh)"

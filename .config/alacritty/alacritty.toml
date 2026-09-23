@@ -1,12 +1,1 @@
-[font.normal]
-family = "JetBrainsMono Nerd Font Mono"
-style = "Regular"
-
-[font]
-size = 16
-
-
-[[keyboard.bindings]]
-key = "Return"
-mods = "Shift"
-chars = "\u001B\r"
+/Users/bisaam/dotfiles/.config/alacritty/alacritty.toml
