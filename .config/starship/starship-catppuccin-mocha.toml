@@ -1,0 +1,26 @@
+add_newline = false
+
+format = '[┌──\(](#61AFEF)$username[@](#C678DD)$hostname[\)-\[](#61AFEF)$directory[\]](#61AFEF)$line_break[└─](#61AFEF)$character'
+
+[username]
+show_always = true
+format = '[$user]($style)'
+style_user = '#61AFEF'
+style_root = '#61AFEF'
+
+[hostname]
+ssh_only = false
+format = '[$hostname]($style)'
+style = '#98C379'
+
+[directory]
+format = '[$path]($style)'
+style = '#98C379'
+home_symbol = '~'
+truncation_length = 0
+
+[character]
+success_symbol = '[\$](#FFFFFF)'
+error_symbol = '[\$](#FFFFFF)'
+vimcmd_symbol = '[\$](#FFFFFF)'
+

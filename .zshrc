@@ -2,18 +2,34 @@
 autoload -Uz compinit
 compinit
 
-# plugins
+# zsh plugins
 source $HOME/dotfiles/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $HOME/dotfiles/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $HOME/dotfiles/plugins/macos/macos.plugin.zsh
 # source $HOME/dotfiles/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 
+# load zsh modules
+zmodload zsh/complist #zsh completion list feature
+autoload -U compinit && compinit #enables zsh tab completion
+autoload -U colors && colors #enables easy colors variables
+
+# zsh tetris setup
+autoload -U tetris 
+zle -N tetris
+bindkey '^X^T' tetris # ctrl x + ctrl t to play tetrix
+
+# history
+HISTSIZE=1000000
+SAVEHIST=1000000
+HISTFILE=~/.zsh_history
+setopt HIST_IGNORE_DUPS # don't save duplicate commands
+setopt HIST_IGNORE_SPACE # don't save commands that starts with a space
 
 # zoxide should use cd instead of z
 eval "$(zoxide init --cmd cd zsh)"
 
-# my custom Prompt
-PROMPT='%F{#61AFEF}%n%F{#C678DD}@%F{#98C379}%m %F{#98C379}%~ %F{#FFFFFF}%%%f '
+# My custom Prompt
+PROMPT='%F{#89B4FA}%n%F{#CBA6F7}@%F{#A6E3A1}%m %F{#A6E3A1}%~ %F{#CDD6F4}$%f '
 
 # my Path variable
 export PATH="$PATH:$HOME/Library/Python/3.9/bin:$HOME/.local/bin:/opt/metasploit-framework/bin:/opt/homebrew/lib/ruby/gems/4.0.0/bin"
@@ -60,3 +76,4 @@ compinit
 
 # Starship startup
 eval "$(starship init zsh)"
+

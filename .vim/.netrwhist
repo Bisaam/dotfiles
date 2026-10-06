@@ -1,3 +1,12 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =1
-let g:netrw_dirhist_1='/Users/bisaam/dotfiles/tmux/plugins/catppuccin/tmux'
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/Users/bisaam/.arduinoIDE'
+let g:netrw_dirhist_3='/Users/bisaam/.arduinoIDE/logs'
+let g:netrw_dirhist_2='/Users/bisaam/.arduinoIDE/logs/20260926T185711'
+let g:netrw_dirhist_1='/Users/bisaam/.arduinoIDE/logs/20260926T185711/host'
+let g:netrw_dirhist_0='/Users/bisaam/.arduinoIDE/logs/20260926T185711'
+let g:netrw_dirhist_9='/Users/bisaam/.arduinoIDE/logs'
+let g:netrw_dirhist_8='/Users/bisaam/.arduinoIDE/logs/20260926T163517'
+let g:netrw_dirhist_7='/Users/bisaam/.arduinoIDE/logs/20260926T163517/host'
+let g:netrw_dirhist_6='/Users/bisaam/.arduinoIDE/logs/20260926T163517'
+let g:netrw_dirhist_5='/Users/bisaam/.arduinoIDE/logs'
