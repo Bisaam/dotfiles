@@ -1,0 +1,4 @@
+# Catppuccin Mocha flavor (installed with: ya pkg add yazi-rs/flavors:catppuccin-mocha)
+[flavor]
+dark  = "catppuccin-mocha"
+light = "catppuccin-mocha"
