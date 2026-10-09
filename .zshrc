@@ -29,7 +29,8 @@ setopt HIST_IGNORE_SPACE # don't save commands that starts with a space
 eval "$(zoxide init --cmd cd zsh)"
 
 # My custom Prompt
-PROMPT='%F{#89B4FA}%n%F{#CBA6F7}@%F{#A6E3A1}%m %F{#A6E3A1}%~ %F{#CDD6F4}$%f '
+# Catppuccin Mocha colors, same layout as starship (fallback if starship isn't loaded)
+PROMPT=$'%F{#89B4FA}┌──(%n%F{#CBA6F7}@%F{#A6E3A1}%m%F{#89B4FA})-[%F{#A6E3A1}%~%F{#89B4FA}]\n%F{#89B4FA}└─%(?.%F{#CDD6F4}.%F{#F38BA8})$%f '
 
 # my Path variable
 export PATH="$PATH:$HOME/Library/Python/3.9/bin:$HOME/.local/bin:/opt/metasploit-framework/bin:/opt/homebrew/lib/ruby/gems/4.0.0/bin"

@@ -1,26 +1,34 @@
 add_newline = false
 
-format = '[┌──\(](#61AFEF)$username[@](#C678DD)$hostname[\)-\[](#61AFEF)$directory[\]](#61AFEF)$line_break[└─](#61AFEF)$character'
+palette = 'catppuccin_mocha'
+
+format = '[┌──\(](blue)$username[@](mauve)$hostname[\)-\[](blue)$directory[\]](blue)$line_break[└─](blue)$character'
 
 [username]
 show_always = true
 format = '[$user]($style)'
-style_user = '#61AFEF'
-style_root = '#61AFEF'
+style_user = 'blue'
+style_root = 'red'
 
 [hostname]
 ssh_only = false
 format = '[$hostname]($style)'
-style = '#98C379'
+style = 'green'
 
 [directory]
 format = '[$path]($style)'
-style = '#98C379'
+style = 'green'
 home_symbol = '~'
 truncation_length = 0
 
 [character]
-success_symbol = '[\$](#FFFFFF)'
-error_symbol = '[\$](#FFFFFF)'
-vimcmd_symbol = '[\$](#FFFFFF)'
+success_symbol = '[\$](text)'
+error_symbol = '[\$](red)'
+vimcmd_symbol = '[\$](text)'
 
+[palettes.catppuccin_mocha]
+red = '#f38ba8'
+green = '#a6e3a1'
+blue = '#89b4fa'
+mauve = '#cba6f7'
+text = '#cdd6f4'
