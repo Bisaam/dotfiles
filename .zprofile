@@ -11,6 +11,9 @@ source ~/.orbstack/shell/init.zsh 2>/dev/null || :
 # Starship configuration
 export STARSHIP_CONFIG=$HOME/dotfiles/.config/starship/starship-catppuccin-mocha.toml
 
+# bat theme (also used for fzf previews)
+export BAT_THEME="Catppuccin Mocha"
+
 # colored less + termcap vars
 export LESS="R --use-color -Dd+r -Du+b"
 export LESS_TERMCAP_mb="$(printf '%b' '[1;31m')"
