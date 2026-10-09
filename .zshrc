@@ -54,6 +54,7 @@ alias la="eza -la --icons=auto"
 alias .="printf '\U000F17A9 ' && pwd"
 #alias cat="bat"
 #alias df="dysk"
+alias dysk="dysk -f 'mp <> /Volumes/Recovery'" # hide the Recovery volume
 alias rm="rm -i"
 alias path="echo $PATH | tr : '\n'"
 alias e="exit"
