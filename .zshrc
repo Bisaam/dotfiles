@@ -21,9 +21,10 @@ bindkey '^X^T' tetris # ctrl x + ctrl t to play tetrix
 # history
 HISTSIZE=1000000
 SAVEHIST=1000000
-HISTFILE=~/.zsh_history
+HISTFILE="${XDG_CACHE_HOME:-$HOME/.cache}/zsh_history" # histfile lives in cache
 setopt HIST_IGNORE_DUPS # don't save duplicate commands
 setopt HIST_IGNORE_SPACE # don't save commands that starts with a space
+setopt INC_APPEND_HISTORY # write each command to histfile immediately, not on exit
 
 # zoxide should use cd instead of z
 eval "$(zoxide init --cmd cd zsh)"
@@ -45,13 +46,6 @@ bindkey "^H" backward-kill-word
 
 # no vim mode 
 bindkey -e
-
-# history opts
-HISTSIZE=1000000
-SAVEHIST=1000000
-HISTFILE="$XDG_CACHE_HOME/zsh_history" # move histfile to cache
-HISTCONTROL=ignoreboth # consecutive duplicates & commands starting with space are not saved
-
 
 # aliases
 alias ..="cd .."
