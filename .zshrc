@@ -55,6 +55,8 @@ alias .="printf '\U000F17A9 ' && pwd"
 #alias cat="bat"
 #alias df="dysk"
 alias dysk="dysk -f 'mp <> /Volumes/Recovery'" # hide the Recovery volume
+# asciiquarium on the terminal background instead of grey (see .config/asciiquarium/DefaultBg.pm)
+alias asciiquarium='PERL5LIB=/opt/homebrew/opt/asciiquarium/libexec/lib/perl5:$HOME/dotfiles/.config/asciiquarium /usr/bin/perl5.34 -MDefaultBg /opt/homebrew/opt/asciiquarium/libexec/bin/asciiquarium'
 alias rm="rm -i"
 alias path="echo $PATH | tr : '\n'"
 alias e="exit"
