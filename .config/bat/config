@@ -1,0 +1,3 @@
+# Catppuccin Mocha, the same colors vim uses (see ~/.vimrc); also applies to
+# fzf previews and anything else that runs bat, login shell or not
+--theme="Catppuccin Mocha"
