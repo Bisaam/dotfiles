@@ -8,10 +8,74 @@ source $HOME/dotfiles/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 source $HOME/dotfiles/plugins/macos/macos.plugin.zsh
 # source $HOME/dotfiles/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 
+# command-line highlighting like Kali Linux: valid commands green, unknown ones
+# underlined, existing files bold, brackets colored by nesting level
+# (named colors come from the iTerm Catppuccin palette)
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern)
+ZSH_HIGHLIGHT_STYLES[default]=none
+ZSH_HIGHLIGHT_STYLES[unknown-token]=underline
+ZSH_HIGHLIGHT_STYLES[reserved-word]=fg=cyan,bold
+ZSH_HIGHLIGHT_STYLES[suffix-alias]=fg=green,underline
+ZSH_HIGHLIGHT_STYLES[global-alias]=fg=green,bold
+ZSH_HIGHLIGHT_STYLES[precommand]=fg=green,underline
+ZSH_HIGHLIGHT_STYLES[commandseparator]=fg=blue,bold
+ZSH_HIGHLIGHT_STYLES[autodirectory]=fg=green,underline
+ZSH_HIGHLIGHT_STYLES[path]=bold
+ZSH_HIGHLIGHT_STYLES[path_pathseparator]=
+ZSH_HIGHLIGHT_STYLES[path_prefix_pathseparator]=
+ZSH_HIGHLIGHT_STYLES[globbing]=fg=blue,bold
+ZSH_HIGHLIGHT_STYLES[history-expansion]=fg=blue,bold
+ZSH_HIGHLIGHT_STYLES[command-substitution]=none
+ZSH_HIGHLIGHT_STYLES[command-substitution-delimiter]=fg=magenta,bold
+ZSH_HIGHLIGHT_STYLES[process-substitution]=none
+ZSH_HIGHLIGHT_STYLES[process-substitution-delimiter]=fg=magenta,bold
+ZSH_HIGHLIGHT_STYLES[single-hyphen-option]=fg=green
+ZSH_HIGHLIGHT_STYLES[double-hyphen-option]=fg=green
+ZSH_HIGHLIGHT_STYLES[back-quoted-argument]=none
+ZSH_HIGHLIGHT_STYLES[back-quoted-argument-delimiter]=fg=blue,bold
+ZSH_HIGHLIGHT_STYLES[single-quoted-argument]=fg=yellow
+ZSH_HIGHLIGHT_STYLES[double-quoted-argument]=fg=yellow
+ZSH_HIGHLIGHT_STYLES[dollar-quoted-argument]=fg=yellow
+ZSH_HIGHLIGHT_STYLES[rc-quote]=fg=magenta
+ZSH_HIGHLIGHT_STYLES[dollar-double-quoted-argument]=fg=magenta,bold
+ZSH_HIGHLIGHT_STYLES[back-double-quoted-argument]=fg=magenta,bold
+ZSH_HIGHLIGHT_STYLES[back-dollar-quoted-argument]=fg=magenta,bold
+ZSH_HIGHLIGHT_STYLES[assign]=none
+ZSH_HIGHLIGHT_STYLES[redirection]=fg=blue,bold
+ZSH_HIGHLIGHT_STYLES[comment]='fg=#9399B2'   # Kali uses black,bold, which is nearly invisible on Catppuccin
+ZSH_HIGHLIGHT_STYLES[named-fd]=none
+ZSH_HIGHLIGHT_STYLES[numeric-fd]=none
+ZSH_HIGHLIGHT_STYLES[arg0]=fg=green
+ZSH_HIGHLIGHT_STYLES[bracket-error]=fg=red,bold
+ZSH_HIGHLIGHT_STYLES[bracket-level-1]=fg=blue,bold
+ZSH_HIGHLIGHT_STYLES[bracket-level-2]=fg=green,bold
+ZSH_HIGHLIGHT_STYLES[bracket-level-3]=fg=magenta,bold
+ZSH_HIGHLIGHT_STYLES[bracket-level-4]=fg=yellow,bold
+ZSH_HIGHLIGHT_STYLES[bracket-level-5]=fg=cyan,bold
+ZSH_HIGHLIGHT_STYLES[cursor-matchingbracket]=standout
+
 # load zsh modules
 zmodload zsh/complist #zsh completion list feature
 autoload -U compinit && compinit #enables zsh tab completion
 autoload -U colors && colors #enables easy colors variables
+
+# completion like Kali: arrow-key menu, case-insensitive, colored, grouped
+zstyle ':completion:*:*:*:*:*' menu select           # tab twice to pick with arrow keys
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' # "doc<tab>" finds Documents
+zstyle ':completion:*' list-colors ''                # color files and dirs in the list
+zstyle ':completion:*' auto-description 'specify: %d'
+zstyle ':completion:*' completer _expand _complete
+zstyle ':completion:*' format 'Completing %d'        # header above each group
+zstyle ':completion:*' group-name ''
+zstyle ':completion:*' list-prompt %SAt %p: Hit TAB for more, or the character to insert%s
+zstyle ':completion:*' select-prompt %SScrolling active: current selection at %p%s
+zstyle ':completion:*' rehash true                   # see newly installed commands right away
+zstyle ':completion:*' use-compctl false
+zstyle ':completion:*' verbose true
+zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,command'
+
+# no vim mode (must come before the binds below, or switching keymaps drops them)
+bindkey -e
 
 # zsh tetris setup
 autoload -U tetris 
@@ -24,7 +88,10 @@ SAVEHIST=1000000
 HISTFILE="${XDG_CACHE_HOME:-$HOME/.cache}/zsh_history" # histfile lives in cache
 setopt HIST_IGNORE_DUPS # don't save duplicate commands
 setopt HIST_IGNORE_SPACE # don't save commands that starts with a space
-setopt INC_APPEND_HISTORY # write each command to histfile immediately, not on exit
+setopt SHARE_HISTORY # write each command immediately and share it between open terminals
+setopt HIST_EXPIRE_DUPS_FIRST # trim duplicates first when the history is full
+setopt HIST_VERIFY # show the expanded !!, !$, etc. before running it
+setopt INTERACTIVE_COMMENTS # allow # comments at the prompt
 
 # zoxide should use cd instead of z
 eval "$(zoxide init --cmd cd zsh)"
@@ -43,9 +110,16 @@ bindkey "^k" kill-line
 bindkey "^j" backward-word
 bindkey "^k" forward-word
 bindkey "^H" backward-kill-word
-
-# no vim mode 
-bindkey -e
+# keys like Kali
+bindkey ' ' magic-space                 # expand !! and !$ as you press space
+bindkey '^[[1;5C' forward-word          # ctrl + right
+bindkey '^[[1;5D' backward-word         # ctrl + left
+bindkey '^[[3;5~' kill-word             # ctrl + delete
+bindkey '^[[3~' delete-char             # delete
+bindkey '^[[H' beginning-of-line        # home
+bindkey '^[[F' end-of-line              # end
+bindkey '^[[Z' undo                     # shift + tab undoes the last edit
+WORDCHARS=${WORDCHARS//\/}              # word jumps and deletes stop at / in paths
 
 # aliases
 alias ..="cd .."
