@@ -2,7 +2,13 @@ add_newline = false
 
 palette = 'nord'
 
-format = '[┌──\(](blue)$username[@](purple)$hostname[\)-\[](blue)$directory[\]](blue)$line_break[└─](blue)$character'
+# Kali-style frame around user@host and the path, then $all: every other module
+# starship has (git, language versions, command duration, ...), in its default
+# order. Each one only shows up when it has something to say.
+format = """
+[┌──\\(](blue)$username[@](purple)$hostname[\\)-\\[](blue)$directory[\\]](blue) \
+$all\
+$line_break[└─](blue)$character"""
 
 [username]
 show_always = true
@@ -31,4 +37,6 @@ red = '#bf616a'     # nord11
 green = '#a3be8c'   # nord14
 blue = '#81a1c1'    # nord9
 purple = '#b48ead'  # nord15
+yellow = '#ebcb8b'  # nord13
+cyan = '#88c0d0'    # nord8
 text = '#d8dee9'    # nord4
