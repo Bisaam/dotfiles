@@ -10,7 +10,7 @@ source $HOME/dotfiles/plugins/macos/macos.plugin.zsh
 
 # command-line highlighting like Kali Linux: valid commands green, unknown ones
 # underlined, existing files bold, brackets colored by nesting level
-# (named colors come from the iTerm Catppuccin palette)
+# (named colors come from the iTerm Nord palette)
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern)
 ZSH_HIGHLIGHT_STYLES[default]=none
 ZSH_HIGHLIGHT_STYLES[unknown-token]=underline
@@ -42,7 +42,7 @@ ZSH_HIGHLIGHT_STYLES[back-double-quoted-argument]=fg=magenta,bold
 ZSH_HIGHLIGHT_STYLES[back-dollar-quoted-argument]=fg=magenta,bold
 ZSH_HIGHLIGHT_STYLES[assign]=none
 ZSH_HIGHLIGHT_STYLES[redirection]=fg=blue,bold
-ZSH_HIGHLIGHT_STYLES[comment]='fg=#9399B2'   # Kali uses black,bold, which is nearly invisible on Catppuccin
+ZSH_HIGHLIGHT_STYLES[comment]='fg=#616E88'   # Kali uses black,bold, which is nearly invisible on Nord
 ZSH_HIGHLIGHT_STYLES[named-fd]=none
 ZSH_HIGHLIGHT_STYLES[numeric-fd]=none
 ZSH_HIGHLIGHT_STYLES[arg0]=fg=green
@@ -97,8 +97,8 @@ setopt INTERACTIVE_COMMENTS # allow # comments at the prompt
 eval "$(zoxide init --cmd cd zsh)"
 
 # My custom Prompt
-# Catppuccin Mocha colors, same layout as starship (fallback if starship isn't loaded)
-PROMPT=$'%F{#89B4FA}┌──(%n%F{#CBA6F7}@%F{#A6E3A1}%m%F{#89B4FA})-[%F{#A6E3A1}%~%F{#89B4FA}]\n%F{#89B4FA}└─%(?.%F{#CDD6F4}.%F{#F38BA8})$%f '
+# Nord colors, same layout as starship (fallback if starship isn't loaded)
+PROMPT=$'%F{#81A1C1}┌──(%n%F{#B48EAD}@%F{#A3BE8C}%m%F{#81A1C1})-[%F{#A3BE8C}%~%F{#81A1C1}]\n%F{#81A1C1}└─%(?.%F{#D8DEE9}.%F{#BF616A})$%f '
 
 # my Path variable
 export PATH="$PATH:$HOME/Library/Python/3.9/bin:$HOME/.local/bin:/opt/metasploit-framework/bin:/opt/homebrew/lib/ruby/gems/4.0.0/bin"
@@ -151,13 +151,13 @@ export FZF_DEFAULT_COMMAND="fd --type f --hidden --follow --exclude .git"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_ALT_C_COMMAND="fd --type d --hidden --follow --exclude .git"
 
-# Catppuccin Mocha colors
+# Nord colors
 export FZF_DEFAULT_OPTS=" \
 --height 40% --layout reverse --border \
---color=bg+:#313244,bg:#1E1E2E,spinner:#F5E0DC,hl:#F38BA8 \
---color=fg:#CDD6F4,header:#F38BA8,info:#CBA6F7,pointer:#F5E0DC \
---color=marker:#B4BEFE,fg+:#CDD6F4,prompt:#CBA6F7,hl+:#F38BA8 \
---color=selected-bg:#45475A,border:#6C7086,label:#CDD6F4"
+--color=bg+:#3B4252,bg:#2E3440,spinner:#B48EAD,hl:#88C0D0 \
+--color=fg:#D8DEE9,header:#81A1C1,info:#B48EAD,pointer:#88C0D0 \
+--color=marker:#A3BE8C,fg+:#ECEFF4,prompt:#81A1C1,hl+:#88C0D0 \
+--color=selected-bg:#434C5E,border:#4C566A,label:#D8DEE9"
 
 # previews: file contents with bat, directory trees with eza
 export FZF_CTRL_T_OPTS="--preview 'bat --color=always --style=numbers --line-range=:300 {} 2>/dev/null || eza --tree --color=always --icons=auto {} | head -200'"

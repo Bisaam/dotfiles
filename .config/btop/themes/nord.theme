@@ -1,0 +1,87 @@
+# Nord, laid out like the Catppuccin theme this replaced: each box gets its own
+# color instead of the all-frost theme that ships with btop.
+# Palette: https://www.nordtheme.com/docs/colors-and-palettes
+
+# Main background, empty for terminal default, need to be empty if you want transparent background
+theme[main_bg]="#2E3440"
+
+# Main text color
+theme[main_fg]="#D8DEE9"
+
+# Title color for boxes
+theme[title]="#D8DEE9"
+
+# Highlight color for keyboard shortcuts
+theme[hi_fg]="#88C0D0"
+
+# Background color of selected item in processes box
+theme[selected_bg]="#434C5E"
+
+# Foreground color of selected item in processes box
+theme[selected_fg]="#88C0D0"
+
+# Color of inactive/disabled text
+theme[inactive_fg]="#616E88"
+
+# Color of text appearing on top of graphs, i.e uptime and current network graph scaling
+theme[graph_text]="#E5E9F0"
+
+# Background color of the percentage meters
+theme[meter_bg]="#434C5E"
+
+# Misc colors for processes box including mini cpu graphs, details memory graph and details status text
+theme[proc_misc]="#E5E9F0"
+
+# CPU, Memory, Network, Proc box outline colors
+theme[cpu_box]="#B48EAD"  # purple
+theme[mem_box]="#A3BE8C"  # green
+theme[net_box]="#D08770"  # orange
+theme[proc_box]="#81A1C1" # blue
+
+# Box divider line and small boxes line color
+theme[div_line]="#4C566A"
+
+# Temperature graph color (green -> yellow -> red)
+theme[temp_start]="#A3BE8C"
+theme[temp_mid]="#EBCB8B"
+theme[temp_end]="#BF616A"
+
+# CPU graph colors (the frost colors, teal -> blue)
+theme[cpu_start]="#8FBCBB"
+theme[cpu_mid]="#88C0D0"
+theme[cpu_end]="#81A1C1"
+
+# Mem/Disk free meter (purple -> blue)
+theme[free_start]="#B48EAD"
+theme[free_mid]="#81A1C1"
+theme[free_end]="#5E81AC"
+
+# Mem/Disk cached meter (deep blue -> light frost)
+theme[cached_start]="#5E81AC"
+theme[cached_mid]="#81A1C1"
+theme[cached_end]="#88C0D0"
+
+# Mem/Disk available meter (orange -> red, Nord has nothing in between)
+theme[available_start]="#D08770"
+theme[available_mid]=""
+theme[available_end]="#BF616A"
+
+# Mem/Disk used meter (green -> frost)
+theme[used_start]="#A3BE8C"
+theme[used_mid]="#8FBCBB"
+theme[used_end]="#88C0D0"
+
+# Download graph colors (orange -> red)
+theme[download_start]="#D08770"
+theme[download_mid]=""
+theme[download_end]="#BF616A"
+
+# Upload graph colors (green -> frost)
+theme[upload_start]="#A3BE8C"
+theme[upload_mid]="#8FBCBB"
+theme[upload_end]="#88C0D0"
+
+# Process box color gradient for threads, mem and cpu usage (frost -> purple)
+theme[process_start]="#88C0D0"
+theme[process_mid]="#81A1C1"
+theme[process_end]="#B48EAD"

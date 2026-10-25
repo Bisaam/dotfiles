@@ -1,4 +1,4 @@
-# Catppuccin Mocha flavor (installed with: ya pkg add yazi-rs/flavors:catppuccin-mocha)
+# Nord flavor, kept locally in flavors/nord.yazi (see its README)
 [flavor]
-dark  = "catppuccin-mocha"
-light = "catppuccin-mocha"
+dark  = "nord"
+light = "nord"

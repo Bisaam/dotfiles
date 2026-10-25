@@ -1,4 +1,4 @@
-" Extra C highlighting to match bat's Catppuccin theme (see ~/.vimrc)
+" Extra C highlighting to match bat's Nord theme (see ~/.vimrc)
 " (also applies to C++, whose syntax file loads this one)
 
 " function calls and definitions: foo(...)
@@ -8,7 +8,10 @@ syn match cOperatorSym "[-+*%=<>!&|^~?]\+\|/[/*]\@!\|\.\d\@!"
 " commas and semicolons (brackets are left alone: c.vim uses them for
 " region matching and error highlighting)
 syn match cDelimiterSym "[,;]"
+" the name after struct/union/enum is a type, colored like a class name
+syn match cStructName "\%(\<\%(struct\|union\|enum\)\s\+\)\@<=\h\w*"
 
 hi def link cFunctionCall Function
 hi def link cOperatorSym  Operator
 hi def link cDelimiterSym Delimiter
+hi def link cStructName   ClassName

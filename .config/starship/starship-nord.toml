@@ -1,8 +1,8 @@
 add_newline = false
 
-palette = 'catppuccin_mocha'
+palette = 'nord'
 
-format = '[┌──\(](blue)$username[@](mauve)$hostname[\)-\[](blue)$directory[\]](blue)$line_break[└─](blue)$character'
+format = '[┌──\(](blue)$username[@](purple)$hostname[\)-\[](blue)$directory[\]](blue)$line_break[└─](blue)$character'
 
 [username]
 show_always = true
@@ -26,9 +26,9 @@ success_symbol = '[\$](text)'
 error_symbol = '[\$](red)'
 vimcmd_symbol = '[\$](text)'
 
-[palettes.catppuccin_mocha]
-red = '#f38ba8'
-green = '#a6e3a1'
-blue = '#89b4fa'
-mauve = '#cba6f7'
-text = '#cdd6f4'
+[palettes.nord]
+red = '#bf616a'     # nord11
+green = '#a3be8c'   # nord14
+blue = '#81a1c1'    # nord9
+purple = '#b48ead'  # nord15
+text = '#d8dee9'    # nord4

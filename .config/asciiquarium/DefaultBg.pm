@@ -1,8 +1,8 @@
 # Make asciiquarium draw on the terminal's own background instead of ANSI black.
 #
-# Term::Animation pairs every color with COLOR_BLACK, which in Catppuccin Mocha is
-# #45475a (surface1), so the aquarium sat on a grey slab instead of #1e1e2e. This
-# swaps the background for -1 (the terminal default). Loaded via the asciiquarium
+# Term::Animation pairs every color with COLOR_BLACK, which in Nord is #3b4252
+# (nord1), so the aquarium sat on a lighter slab instead of #2e3440. This swaps
+# the background for -1 (the terminal default). Loaded via the asciiquarium
 # alias in .zshrc, so the Homebrew install stays untouched.
 package DefaultBg;
 use strict;

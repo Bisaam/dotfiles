@@ -55,69 +55,64 @@ endif
 set termguicolors
 set background=dark
 
-" Color syntax the way bat's Catppuccin Mocha theme does (also used by fzf and
-" yazi previews), so code looks the same in every tool. catppuccin/vim maps some
-" groups differently; extra matches for function calls, operators, punctuation
-" and docstrings live in ~/.vim/after/syntax/.
-function! s:CatppuccinLikeBat() abort
-  hi Identifier guifg=#cdd6f4 ctermfg=189     " variables are plain text
-  hi Operator   guifg=#94e2d5 ctermfg=158     " operators are teal
-  hi! link Character    String                " 'c' is a string
-  hi! link StorageClass Keyword               " static, const, extern
-  hi! link Structure    Keyword               " struct, union, enum
-  hi! link Typedef      Keyword
+" Color syntax the way bat's Nord theme does (also used by fzf and yazi
+" previews), so code looks the same in every tool. nord-vim and bat's theme
+" share a palette but not every mapping; extra matches for function calls,
+" operators, punctuation and docstrings live in ~/.vim/after/syntax/.
+" ctermfg values are ANSI numbers, which iTerm fills in from its Nord palette.
+function! s:NordLikeBat() abort
+  hi Constant  guifg=#81A1C1 ctermfg=4         " True, None, null and ALL_CAPS are blue
+  hi ClassName guifg=#8FBCBB ctermfg=14        " class, exception and struct names are teal
   " C
-  hi! link cType   Keyword                     " int, char, void
-  hi! link cppType Keyword                     " auto, bool
-  hi! link cFormat String                      " %d inside strings
-  " Python
-  hi! link pythonClass            Type        " class names
-  hi! link pythonBuiltin          pythonBuiltinFunc  " print, len, range (italic)
-  hi! link pythonExceptions       Constant    " ValueError, KeyError
-  hi! link pythonDecorator        Constant
-  hi! link pythonDecoratorName    Constant
-  hi! link pythonOperator         Keyword     " and, or, not, in, is
-  hi! link pythonFStringDelimiter Delimiter
-  " shell and zsh: commands are blue, declarations (local, export) are keywords
-  hi! link shQuote          String            " the quotes around strings
-  hi! link shDeref          Identifier        " $VAR, ${VAR}
-  hi! link shStatement      Function          " echo, cd, eval, grep, cat
-  hi! link shLoop           Keyword           " for, while (linked to shStatement)
-  hi! link shSet            Function          " set, unset
+  hi cInclude guifg=#5E81AC ctermfg=12         " #include is the darker blue, #define isn't
+  hi! link cIncluded String                    " <stdio.h>
+  " Python. builtin functions are italic, as in bat (needs "Use Italic Font" on
+  " in the iTerm profile, which markdown *emphasis* also uses)
+  hi! link pythonClass         ClassName
+  hi! link pythonExceptions    ClassName       " ValueError, KeyError
+  hi! link pythonDecoratorName Identifier      " only the @ is colored
+  hi pythonDecorator   guifg=#D08770 ctermfg=11
+  hi pythonBuiltinFunc guifg=#88C0D0 ctermfg=6 gui=italic cterm=italic
+  hi! link pythonBuiltin pythonBuiltinFunc     " print, len, range (italic)
+  " shell and zsh: commands are functions, declarations (local, export) are keywords
+  hi! link shQuote          String             " the quotes around strings
+  hi! link shVarAssign      Operator           " the = in name=value
+  hi! link shStatement      Function           " echo, cd, eval
+  hi! link kshStatement     Function           " grep, ls, dirname
+  hi! link shLoop           Keyword            " for, while (linked to shStatement)
+  hi! link shSet            Function           " set, unset
   hi! link zshCommands      Function
-  hi! link zshPrecommand    Function          " exec, command, noglob
-  hi! link zshTypes         Keyword           " local, typeset, readonly
-  hi! link zshOptStart      Function          " setopt, unsetopt
+  hi! link zshPrecommand    Function           " exec, command, noglob
+  hi! link zshTypes         Keyword            " local, typeset, readonly
+  hi! link zshOptStart      Function           " setopt, unsetopt
+  hi! link zshFunction      Function
+  hi! link zshOperator      Operator           " ; && ||
+  hi! link zshPreProc       Comment            " the #! line
+  hi! link zshDeref         Identifier         " $VAR
   hi! link zshDereferencing Identifier
-  hi! link zshSubst         Identifier
-  hi! link zshSubstDelim    Delimiter         " the $( ) around a substitution
-  " config files: keys are blue, unquoted values are strings
-  hi! link tomlKey                 Function
-  hi! link tomlKeyDq               Function
-  hi! link tomlKeySq               Function
-  hi! link yamlMappingKey          Function
-  hi! link yamlKeyValueDelimiter   Operator
-  hi! link yamlPlainScalar         String
-  hi! link jsonKeyword             Function
-  hi! link jsonQuote               Delimiter
-  hi! link jsonNoise               Delimiter
-  hi! link jsonKeywordMatch        Delimiter  " the : after a key
-  " markdown
-  hi! link markdownUrl Function
-  " Italics, the way bat's Catppuccin theme styles them: comments, function
-  " names/calls, and (Python) parameters and item-access are italic. Needs
-  " "Use Italic Font" on in the iTerm profile.
-  hi Comment   gui=italic cterm=italic
-  hi Function  gui=italic cterm=italic        " function names and calls
-  hi pythonBuiltinFunc  guifg=#fab387 ctermfg=216 gui=italic cterm=italic
-  hi pythonParam        guifg=#eba0ac ctermfg=217 gui=italic cterm=italic
-  hi pythonMethodObj    guifg=#89b4fa ctermfg=111 gui=NONE   cterm=NONE
-  hi CursorLineNr guifg=#89b4fa ctermfg=111 gui=bold cterm=bold    " current line number is bold blue, like NORMAL
-  hi SpecialKey guifg=#45475a ctermfg=239 guibg=NONE ctermbg=NONE  " indent guides are faint surface1
+  hi! link zshSubst         Identifier         " ${VAR}
+  hi! link zshSubstDelim    Delimiter          " the $( ) around a substitution
+  " config files: toml keys are blue, yaml keys teal, json keys plain strings
+  hi! link tomlKey                   Keyword
+  hi! link tomlKeyDq                 Keyword
+  hi! link tomlKeySq                 Keyword
+  hi! link yamlBlockMappingDelimiter Delimiter  " the : after a key
+  hi! link yamlKeyValueDelimiter     Delimiter
+  hi! link yamlPlainScalar           String     " unquoted values
+  hi! link jsonKeyword               String
+  hi! link jsonQuote                 String
+  hi! link jsonKeywordMatch          Delimiter  " the : after a key
+  hi! link jsonNoise                 Delimiter
+  hi! link jsonNull                  Constant
+  " markdown: the # in a heading is the heading's color
+  hi! link markdownHeadingDelimiter markdownH1
+  " editor
+  hi CursorLineNr guifg=#88C0D0 ctermfg=6 gui=bold cterm=bold    " current line number is bold frost, like NORMAL
+  hi SpecialKey guifg=#434C5E ctermfg=0 guibg=NONE ctermbg=NONE  " indent guides are faint nord2
 endfunction
-augroup catppuccin_like_bat
+augroup nord_like_bat
   autocmd!
-  autocmd ColorScheme catppuccin_mocha call s:CatppuccinLikeBat()
+  autocmd ColorScheme nord call s:NordLikeBat()
 augroup END
 
 " Transparent background so terminal opacity shows through
@@ -130,11 +125,12 @@ augroup transparent_bg
 augroup END
 
 " vim color theme
-colorscheme catppuccin_mocha
+let g:nord_italic = 1   " nord-vim only uses italics when $TERM_ITALICS is set otherwise
+colorscheme nord
 
 " Lightline (status bar)
 let g:lightline = {
-      \ 'colorscheme': 'catppuccin_mocha',
+      \ 'colorscheme': 'nord',
       \ 'active': {
       \   'left':  [ [ 'mode', 'paste' ], [ 'readonly', 'filename', 'modified' ] ],
       \   'right': [ [ 'lineinfo' ], [ 'percent' ], [ 'fileformat', 'fileencoding', 'filetype' ] ],

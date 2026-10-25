@@ -9,7 +9,7 @@ eval "$(/opt/homebrew/bin/brew shellenv zsh)"
 source ~/.orbstack/shell/init.zsh 2>/dev/null || :
 
 # Starship configuration
-export STARSHIP_CONFIG=$HOME/dotfiles/.config/starship/starship-catppuccin-mocha.toml
+export STARSHIP_CONFIG=$HOME/dotfiles/.config/starship/starship-nord.toml
 
 # colored less + termcap vars
 export LESS="R --use-color -Dd+r -Du+b"
