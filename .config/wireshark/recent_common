@@ -21,6 +21,7 @@ recent.capture_file: /Users/bisaam/Downloads/git_capture.pcapng
 
 ######## Recent display filters (latest last), cannot be altered through command line ########
 
+recent.display_filter: tcp
 recent.display_filter: tcp.stream eq 1
 recent.display_filter: ip.dst == 20.207.73.82 || ip.src == 10.207.73.82
 recent.display_filter: ip.dst == 20.207.73.82
@@ -30,14 +31,13 @@ recent.display_filter: ip.dst == 39.49.62.200
 recent.display_filter: tcp.port in {6927,6895,6927}
 recent.display_filter: tcp.port == 9999
 recent.display_filter: tcp.port == 9998
-recent.display_filter: tcp.port == 8080
 
 # Main window geometry.
 # Decimal numbers.
-gui.geometry_main_x: 0
+gui.geometry_main_x: 47
 gui.geometry_main_y: 30
-gui.geometry_main_width: 2048
-gui.geometry_main_height: 1033
+gui.geometry_main_width: 1873
+gui.geometry_main_height: 1022
 
 # Main window maximized.
 # true or false (case-insensitive).
@@ -45,7 +45,7 @@ gui.geometry_main_maximized: true
 
 # Main window geometry state.
 # Hex byte string.
-gui.geometry_main: 01d9d0cb00030000000000000000001e000007ff00000442000000000000003a000007ff0000044200000000020000000800000000000000003a000007ff00000442
+gui.geometry_main: 01d9d0cb000300000000002f0000001e0000077f00000437000001f8000000ab00000613000003aa000000000200000007800000002f0000003a0000077f00000437
 
 # Leftalign Action Buttons.
 # true or false (case-insensitive).
