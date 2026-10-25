@@ -1,12 +1,26 @@
 " Enable line number
 set number                  
 " Enable relative line number
-set relativenumber         
+set relativenumber
+" Highlight the current line's number (not the whole line)
+set cursorline
+set cursorlineopt=number
 " Enable the syntax
 syntax on
 " Enable autoindent
 set autoindent
 set smartindent
+" Indent guides: a faint │ at every indent level, like indent-blankline.nvim.
+" Drawn with listchars, so the spacing follows each buffer's shiftwidth.
+set list
+function! s:IndentGuides() abort
+  let &l:listchars = 'tab:│ ,leadmultispace:│' . repeat(' ', shiftwidth() - 1)
+endfunction
+augroup indent_guides
+  autocmd!
+  autocmd BufWinEnter,FileType * call s:IndentGuides()
+  autocmd OptionSet shiftwidth,tabstop call s:IndentGuides()
+augroup END
 " Vim Status bar
 set laststatus=2
 " Disable the startup message
@@ -98,10 +112,21 @@ function! s:CatppuccinLikeBat() abort
   hi pythonBuiltinFunc  guifg=#fab387 ctermfg=216 gui=italic cterm=italic
   hi pythonParam        guifg=#eba0ac ctermfg=217 gui=italic cterm=italic
   hi pythonMethodObj    guifg=#89b4fa ctermfg=111 gui=NONE   cterm=NONE
+  hi CursorLineNr guifg=#89b4fa ctermfg=111 gui=bold cterm=bold    " current line number is bold blue, like NORMAL
+  hi SpecialKey guifg=#45475a ctermfg=239 guibg=NONE ctermbg=NONE  " indent guides are faint surface1
 endfunction
 augroup catppuccin_like_bat
   autocmd!
   autocmd ColorScheme catppuccin_mocha call s:CatppuccinLikeBat()
+augroup END
+
+" Transparent background so terminal opacity shows through
+augroup transparent_bg
+  autocmd!
+  autocmd ColorScheme * highlight Normal ctermbg=NONE guibg=NONE
+  autocmd ColorScheme * highlight NonText ctermbg=NONE guibg=NONE
+  autocmd ColorScheme * highlight LineNr ctermbg=NONE guibg=NONE
+  autocmd ColorScheme * highlight SignColumn ctermbg=NONE guibg=NONE
 augroup END
 
 " vim color theme
